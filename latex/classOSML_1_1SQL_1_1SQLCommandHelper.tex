@@ -1,0 +1,110 @@
+\hypertarget{classOSML_1_1SQL_1_1SQLCommandHelper}{}\section{O\+S\+M\+L.\+S\+Q\+L.\+S\+Q\+L\+Command\+Helper Class Reference}
+\label{classOSML_1_1SQL_1_1SQLCommandHelper}\index{OSML.SQL.SQLCommandHelper@{OSML.SQL.SQLCommandHelper}}
+
+
+Main helper for \mbox{\hyperlink{namespaceOSML_1_1SQL}{S\+QL}} commands $<$/summray$>$  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classOSML_1_1SQL_1_1SQLCommandHelper_acc8e1518ca00301bf93265efd14ab260}\label{classOSML_1_1SQL_1_1SQLCommandHelper_acc8e1518ca00301bf93265efd14ab260}} 
+\mbox{\hyperlink{classOSML_1_1SQL_1_1SQLCommandHelper_acc8e1518ca00301bf93265efd14ab260}{S\+Q\+L\+Command\+Helper}} (S\+Q\+Lite\+Connection sql\+\_\+connection)
+\begin{DoxyCompactList}\small\item\em Main helper for \mbox{\hyperlink{namespaceOSML_1_1SQL}{S\+QL}} commands $<$/summray$>$ 
+\begin{DoxyParams}{Parameters}
+{\em sql\+\_\+connection} & \mbox{\hyperlink{namespaceOSML_1_1SQL}{S\+QL}} connection that will be used\\
+\hline
+\end{DoxyParams}
+\end{DoxyCompactList}\item 
+S\+Q\+Lite\+Data\+Reader \mbox{\hyperlink{classOSML_1_1SQL_1_1SQLCommandHelper_a138f00ffaafdac45507d05875f7f92b5}{Get\+Reader}} (string sql\+\_\+command)
+\begin{DoxyCompactList}\small\item\em Gets S\+Q\+Lite\+Data\+Reader with specified command parameter \end{DoxyCompactList}\item 
+async Task$<$ Db\+Data\+Reader $>$ \mbox{\hyperlink{classOSML_1_1SQL_1_1SQLCommandHelper_a356b592db2703b8061a7128de02b18a8}{Get\+Reader\+Async}} (string sql\+\_\+command)
+\begin{DoxyCompactList}\small\item\em Gets S\+Q\+Lite\+Data\+Reader with specified command parameter \end{DoxyCompactList}\item 
+S\+Q\+Lite\+Data\+Reader \mbox{\hyperlink{classOSML_1_1SQL_1_1SQLCommandHelper_a8a951367810d4216a8ea2c38cc5cf4ac}{Get\+Reader\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Gets S\+Q\+Lite\+Data\+Reader without any set parameters \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOSML_1_1SQL_1_1SQLCommandHelper_aac343844e6797a8ebf9508b622ea9d70}{Set\+Connection}} (S\+Q\+Lite\+Connection sql\+\_\+connection)
+\begin{DoxyCompactList}\small\item\em Sets new S\+Q\+Lite\+Connection to S\+Q\+L\+L\+Connection property \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+S\+Q\+Lite\+Connection \mbox{\hyperlink{classOSML_1_1SQL_1_1SQLCommandHelper_a63fd14fd128d424031298589ea073745}{S\+Q\+L\+L\+Connection}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Currently class definied \mbox{\hyperlink{namespaceOSML_1_1SQL}{S\+QL}} connection. This connection is currently used. get -\/ public set -\/ private Use Set\+Connection to modify current connection \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main helper for \mbox{\hyperlink{namespaceOSML_1_1SQL}{S\+QL}} commands $<$/summray$>$ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSML_1_1SQL_1_1SQLCommandHelper_a138f00ffaafdac45507d05875f7f92b5}\label{classOSML_1_1SQL_1_1SQLCommandHelper_a138f00ffaafdac45507d05875f7f92b5}} 
+\index{OSML.SQL.SQLCommandHelper@{OSML.SQL.SQLCommandHelper}!GetReader@{GetReader}}
+\index{GetReader@{GetReader}!OSML.SQL.SQLCommandHelper@{OSML.SQL.SQLCommandHelper}}
+\subsubsection{\texorpdfstring{GetReader()}{GetReader()}}
+{\footnotesize\ttfamily S\+Q\+Lite\+Data\+Reader O\+S\+M\+L.\+S\+Q\+L.\+S\+Q\+L\+Command\+Helper.\+Get\+Reader (\begin{DoxyParamCaption}\item[{string}]{sql\+\_\+command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets S\+Q\+Lite\+Data\+Reader with specified command parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql\+\_\+command} & \mbox{\hyperlink{namespaceOSML_1_1SQL}{S\+QL}} command\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1SQL_1_1SQLCommandHelper_a356b592db2703b8061a7128de02b18a8}\label{classOSML_1_1SQL_1_1SQLCommandHelper_a356b592db2703b8061a7128de02b18a8}} 
+\index{OSML.SQL.SQLCommandHelper@{OSML.SQL.SQLCommandHelper}!GetReaderAsync@{GetReaderAsync}}
+\index{GetReaderAsync@{GetReaderAsync}!OSML.SQL.SQLCommandHelper@{OSML.SQL.SQLCommandHelper}}
+\subsubsection{\texorpdfstring{GetReaderAsync()}{GetReaderAsync()}}
+{\footnotesize\ttfamily async Task$<$Db\+Data\+Reader$>$ O\+S\+M\+L.\+S\+Q\+L.\+S\+Q\+L\+Command\+Helper.\+Get\+Reader\+Async (\begin{DoxyParamCaption}\item[{string}]{sql\+\_\+command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets S\+Q\+Lite\+Data\+Reader with specified command parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql\+\_\+command} & \mbox{\hyperlink{namespaceOSML_1_1SQL}{S\+QL}} command\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1SQL_1_1SQLCommandHelper_a8a951367810d4216a8ea2c38cc5cf4ac}\label{classOSML_1_1SQL_1_1SQLCommandHelper_a8a951367810d4216a8ea2c38cc5cf4ac}} 
+\index{OSML.SQL.SQLCommandHelper@{OSML.SQL.SQLCommandHelper}!GetReaderEmpty@{GetReaderEmpty}}
+\index{GetReaderEmpty@{GetReaderEmpty}!OSML.SQL.SQLCommandHelper@{OSML.SQL.SQLCommandHelper}}
+\subsubsection{\texorpdfstring{GetReaderEmpty()}{GetReaderEmpty()}}
+{\footnotesize\ttfamily S\+Q\+Lite\+Data\+Reader O\+S\+M\+L.\+S\+Q\+L.\+S\+Q\+L\+Command\+Helper.\+Get\+Reader\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets S\+Q\+Lite\+Data\+Reader without any set parameters 
+
+\mbox{\Hypertarget{classOSML_1_1SQL_1_1SQLCommandHelper_aac343844e6797a8ebf9508b622ea9d70}\label{classOSML_1_1SQL_1_1SQLCommandHelper_aac343844e6797a8ebf9508b622ea9d70}} 
+\index{OSML.SQL.SQLCommandHelper@{OSML.SQL.SQLCommandHelper}!SetConnection@{SetConnection}}
+\index{SetConnection@{SetConnection}!OSML.SQL.SQLCommandHelper@{OSML.SQL.SQLCommandHelper}}
+\subsubsection{\texorpdfstring{SetConnection()}{SetConnection()}}
+{\footnotesize\ttfamily void O\+S\+M\+L.\+S\+Q\+L.\+S\+Q\+L\+Command\+Helper.\+Set\+Connection (\begin{DoxyParamCaption}\item[{S\+Q\+Lite\+Connection}]{sql\+\_\+connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets new S\+Q\+Lite\+Connection to S\+Q\+L\+L\+Connection property 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql\+\_\+connection} & S\+Q\+Lite connection\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classOSML_1_1SQL_1_1SQLCommandHelper_a63fd14fd128d424031298589ea073745}\label{classOSML_1_1SQL_1_1SQLCommandHelper_a63fd14fd128d424031298589ea073745}} 
+\index{OSML.SQL.SQLCommandHelper@{OSML.SQL.SQLCommandHelper}!SQLLConnection@{SQLLConnection}}
+\index{SQLLConnection@{SQLLConnection}!OSML.SQL.SQLCommandHelper@{OSML.SQL.SQLCommandHelper}}
+\subsubsection{\texorpdfstring{SQLLConnection}{SQLLConnection}}
+{\footnotesize\ttfamily S\+Q\+Lite\+Connection O\+S\+M\+L.\+S\+Q\+L.\+S\+Q\+L\+Command\+Helper.\+S\+Q\+L\+L\+Connection\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Currently class definied \mbox{\hyperlink{namespaceOSML_1_1SQL}{S\+QL}} connection. This connection is currently used. get -\/ public set -\/ private Use Set\+Connection to modify current connection 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/sql/Sql\+Command\+Helper.\+cs\end{DoxyCompactItemize}

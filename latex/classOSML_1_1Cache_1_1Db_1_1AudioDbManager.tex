@@ -1,0 +1,68 @@
+\hypertarget{classOSML_1_1Cache_1_1Db_1_1AudioDbManager}{}\section{O\+S\+M\+L.\+Cache.\+Db.\+Audio\+Db\+Manager Class Reference}
+\label{classOSML_1_1Cache_1_1Db_1_1AudioDbManager}\index{OSML.Cache.Db.AudioDbManager@{OSML.Cache.Db.AudioDbManager}}
+
+
+Main music\+\_\+audio table managment class  
+
+
+Inheritance diagram for O\+S\+M\+L.\+Cache.\+Db.\+Audio\+Db\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classOSML_1_1Cache_1_1Db_1_1AudioDbManager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task$<$ bool $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1Db_1_1AudioDbManager_aa236815a7d2ae17f4e8e4886b1a85497}{Update\+Audo\+Db}} ()
+\begin{DoxyCompactList}\small\item\em Updates database from currently initialitzed Folder\+List(Cache.\+Cache\+Data). Can be used for repopulation. Note\+: when used table is recreated, and then repopulated. Optimisation needed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static async Task$<$ bool $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1Db_1_1AudioDbManager_a55cf000916b79947d45c83760f46acb1}{Remove\+Row\+From\+Table\+By\+Path\+Async}} (string file\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Removes specific file from the table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Main music\+\_\+audio table managment class 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Db_1_1AudioDbManager_a55cf000916b79947d45c83760f46acb1}\label{classOSML_1_1Cache_1_1Db_1_1AudioDbManager_a55cf000916b79947d45c83760f46acb1}} 
+\index{OSML.Cache.Db.AudioDbManager@{OSML.Cache.Db.AudioDbManager}!RemoveRowFromTableByPathAsync@{RemoveRowFromTableByPathAsync}}
+\index{RemoveRowFromTableByPathAsync@{RemoveRowFromTableByPathAsync}!OSML.Cache.Db.AudioDbManager@{OSML.Cache.Db.AudioDbManager}}
+\subsubsection{\texorpdfstring{RemoveRowFromTableByPathAsync()}{RemoveRowFromTableByPathAsync()}}
+{\footnotesize\ttfamily static async Task$<$bool$>$ O\+S\+M\+L.\+Cache.\+Db.\+Audio\+Db\+Manager.\+Remove\+Row\+From\+Table\+By\+Path\+Async (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Removes specific file from the table. 
+
+\begin{DoxyReturn}{Returns}
+bool, success status of task(true -\/ success, false -\/ fail). 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & Path to file, that needs to be removed from a table.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Db_1_1AudioDbManager_aa236815a7d2ae17f4e8e4886b1a85497}\label{classOSML_1_1Cache_1_1Db_1_1AudioDbManager_aa236815a7d2ae17f4e8e4886b1a85497}} 
+\index{OSML.Cache.Db.AudioDbManager@{OSML.Cache.Db.AudioDbManager}!UpdateAudoDb@{UpdateAudoDb}}
+\index{UpdateAudoDb@{UpdateAudoDb}!OSML.Cache.Db.AudioDbManager@{OSML.Cache.Db.AudioDbManager}}
+\subsubsection{\texorpdfstring{UpdateAudoDb()}{UpdateAudoDb()}}
+{\footnotesize\ttfamily async Task$<$bool$>$ O\+S\+M\+L.\+Cache.\+Db.\+Audio\+Db\+Manager.\+Update\+Audo\+Db (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates database from currently initialitzed Folder\+List(Cache.\+Cache\+Data). Can be used for repopulation. Note\+: when used table is recreated, and then repopulated. Optimisation needed. 
+
+\begin{DoxyReturn}{Returns}
+bool, success status of task(true -\/ success, false -\/ fail). 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/\+Cache/\+Initializer/\+Db/Audio\+Db\+Manager.\+cs\end{DoxyCompactItemize}

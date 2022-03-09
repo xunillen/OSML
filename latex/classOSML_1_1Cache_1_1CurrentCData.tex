@@ -1,0 +1,53 @@
+\hypertarget{classOSML_1_1Cache_1_1CurrentCData}{}\section{O\+S\+M\+L.\+Cache.\+Current\+C\+Data Class Reference}
+\label{classOSML_1_1Cache_1_1CurrentCData}\index{OSML.Cache.CurrentCData@{OSML.Cache.CurrentCData}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static async Task$<$ bool $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CurrentCData_abb1203ad1bb754024aa1a8429d8793aa}{Update\+Folder\+List\+Async}} (\mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} cache\+\_\+pointer)
+\begin{DoxyCompactList}\small\item\em List of currently loaded Sub\+Caches(\+Sub folders). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static Observable\+Collection$<$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheObj}{Cache\+Obj}} $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CurrentCData_ab24556810039e9fa22209438cbf56023}{Folder\+List}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em List of currently loaded caches. Soon obsolete(migration to S\+Q\+L). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CurrentCData_abb1203ad1bb754024aa1a8429d8793aa}\label{classOSML_1_1Cache_1_1CurrentCData_abb1203ad1bb754024aa1a8429d8793aa}} 
+\index{OSML.Cache.CurrentCData@{OSML.Cache.CurrentCData}!UpdateFolderListAsync@{UpdateFolderListAsync}}
+\index{UpdateFolderListAsync@{UpdateFolderListAsync}!OSML.Cache.CurrentCData@{OSML.Cache.CurrentCData}}
+\subsubsection{\texorpdfstring{UpdateFolderListAsync()}{UpdateFolderListAsync()}}
+{\footnotesize\ttfamily static async Task$<$bool$>$ O\+S\+M\+L.\+Cache.\+Current\+C\+Data.\+Update\+Folder\+List\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}}}]{cache\+\_\+pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+List of currently loaded Sub\+Caches(\+Sub folders). 
+
+Updates Folder\+List. N\+O\+TE\+: This should only be called from Cache\+Manager!. 
+
+\begin{DoxyReturn}{Returns}
+bool true -\/ Update successfull. false -\/ error while updating Folder\+List. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em cache\+\_\+pointer} & \mbox{\hyperlink{namespaceOSML_1_1Cache}{Cache}} pointer\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CurrentCData_ab24556810039e9fa22209438cbf56023}\label{classOSML_1_1Cache_1_1CurrentCData_ab24556810039e9fa22209438cbf56023}} 
+\index{OSML.Cache.CurrentCData@{OSML.Cache.CurrentCData}!FolderList@{FolderList}}
+\index{FolderList@{FolderList}!OSML.Cache.CurrentCData@{OSML.Cache.CurrentCData}}
+\subsubsection{\texorpdfstring{FolderList}{FolderList}}
+{\footnotesize\ttfamily Observable\+Collection$<$\mbox{\hyperlink{classOSML_1_1Cache_1_1CacheObj}{Cache\+Obj}}$>$ O\+S\+M\+L.\+Cache.\+Current\+C\+Data.\+Folder\+List = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+List of currently loaded caches. Soon obsolete(migration to S\+Q\+L). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/\+Cache/\+Data/Current\+C\+Data.\+cs\end{DoxyCompactItemize}

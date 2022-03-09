@@ -1,0 +1,76 @@
+\hypertarget{classOSML_1_1Cache_1_1Setup_1_1CurrentCacheSetup}{}\section{O\+S\+M\+L.\+Cache.\+Setup.\+Current\+Cache\+Setup Class Reference}
+\label{classOSML_1_1Cache_1_1Setup_1_1CurrentCacheSetup}\index{OSML.Cache.Setup.CurrentCacheSetup@{OSML.Cache.Setup.CurrentCacheSetup}}
+
+
+Holds current cache setup definitions. Not implemented.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classOSML_1_1Cache_1_1Setup_1_1CurrentCacheSetup_a83ae9cf7c7e5c3edfa4375bc8c3f4f76}{Set\+Database\+Path}} (string db\+\_\+path\+\_\+directory)
+\begin{DoxyCompactList}\small\item\em Sets new path for storing main database. Modifies Data\+Base\+Path property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{namespaceOSML_1_1Cache_1_1Setup_abdb98825a257abbcae6c186d8ba7a088}{Cache\+Type}} \mbox{\hyperlink{classOSML_1_1Cache_1_1Setup_1_1CurrentCacheSetup_a3e5c536b009ba38125bb2605ef2071d3}{Caching\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Specifies what caching method should be used. Fully accessible. Not implemented. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{classOSML_1_1Cache_1_1Setup_1_1CurrentCacheSetup_a1eff786a11c1515e84ff7195b72bdffa}{Data\+Base\+Path}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Path where main database is stored. Default\+: System.\+I\+O.\+Directory.\+Get\+Current\+Directory()(aka.\+static runtime directory). Can be modified through Set\+Database\+Path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds current cache setup definitions. Not implemented. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Setup_1_1CurrentCacheSetup_a83ae9cf7c7e5c3edfa4375bc8c3f4f76}\label{classOSML_1_1Cache_1_1Setup_1_1CurrentCacheSetup_a83ae9cf7c7e5c3edfa4375bc8c3f4f76}} 
+\index{OSML.Cache.Setup.CurrentCacheSetup@{OSML.Cache.Setup.CurrentCacheSetup}!SetDatabasePath@{SetDatabasePath}}
+\index{SetDatabasePath@{SetDatabasePath}!OSML.Cache.Setup.CurrentCacheSetup@{OSML.Cache.Setup.CurrentCacheSetup}}
+\subsubsection{\texorpdfstring{SetDatabasePath()}{SetDatabasePath()}}
+{\footnotesize\ttfamily static void O\+S\+M\+L.\+Cache.\+Setup.\+Current\+Cache\+Setup.\+Set\+Database\+Path (\begin{DoxyParamCaption}\item[{string}]{db\+\_\+path\+\_\+directory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets new path for storing main database. Modifies Data\+Base\+Path property. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+\_\+path\+\_\+directory} & Path pointing to where database should be stored(folder).\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Setup_1_1CurrentCacheSetup_a3e5c536b009ba38125bb2605ef2071d3}\label{classOSML_1_1Cache_1_1Setup_1_1CurrentCacheSetup_a3e5c536b009ba38125bb2605ef2071d3}} 
+\index{OSML.Cache.Setup.CurrentCacheSetup@{OSML.Cache.Setup.CurrentCacheSetup}!CachingType@{CachingType}}
+\index{CachingType@{CachingType}!OSML.Cache.Setup.CurrentCacheSetup@{OSML.Cache.Setup.CurrentCacheSetup}}
+\subsubsection{\texorpdfstring{CachingType}{CachingType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceOSML_1_1Cache_1_1Setup_abdb98825a257abbcae6c186d8ba7a088}{Cache\+Type}} O\+S\+M\+L.\+Cache.\+Setup.\+Current\+Cache\+Setup.\+Caching\+Type\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Specifies what caching method should be used. Fully accessible. Not implemented. 
+
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Setup_1_1CurrentCacheSetup_a1eff786a11c1515e84ff7195b72bdffa}\label{classOSML_1_1Cache_1_1Setup_1_1CurrentCacheSetup_a1eff786a11c1515e84ff7195b72bdffa}} 
+\index{OSML.Cache.Setup.CurrentCacheSetup@{OSML.Cache.Setup.CurrentCacheSetup}!DataBasePath@{DataBasePath}}
+\index{DataBasePath@{DataBasePath}!OSML.Cache.Setup.CurrentCacheSetup@{OSML.Cache.Setup.CurrentCacheSetup}}
+\subsubsection{\texorpdfstring{DataBasePath}{DataBasePath}}
+{\footnotesize\ttfamily string O\+S\+M\+L.\+Cache.\+Setup.\+Current\+Cache\+Setup.\+Data\+Base\+Path\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= }
+\DoxyCodeLine{            System.IO.Directory.GetCurrentDirectory()}
+
+\end{DoxyCode}
+
+
+Path where main database is stored. Default\+: System.\+I\+O.\+Directory.\+Get\+Current\+Directory()(aka.\+static runtime directory). Can be modified through Set\+Database\+Path. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/\+Cache/\+Initializer/\+Setup/Current.\+cs\end{DoxyCompactItemize}

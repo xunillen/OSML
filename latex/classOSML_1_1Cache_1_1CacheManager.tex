@@ -1,0 +1,61 @@
+\hypertarget{classOSML_1_1Cache_1_1CacheManager}{}\section{O\+S\+M\+L.\+Cache.\+Cache\+Manager Class Reference}
+\label{classOSML_1_1Cache_1_1CacheManager}\index{OSML.Cache.CacheManager@{OSML.Cache.CacheManager}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static async Task$<$ bool $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheManager_aeb65d11786064f146f115d0f642e96ab}{Update\+Async}} (\mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} c\+\_\+pointer)
+\item 
+static async Task$<$ bool $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheManager_aad0553e006d717d95fb84515c298581e}{Add\+Async}} (string real\+\_\+folder\+\_\+path)
+\item 
+static async Task \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheManager_a958c9e18525ae24dc5dd3c3a34a201f6}{Remove\+Async}} (\mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} cpointer)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$surmary$>$ Main cache managment class $<$/surmary$>$ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheManager_aad0553e006d717d95fb84515c298581e}\label{classOSML_1_1Cache_1_1CacheManager_aad0553e006d717d95fb84515c298581e}} 
+\index{OSML.Cache.CacheManager@{OSML.Cache.CacheManager}!AddAsync@{AddAsync}}
+\index{AddAsync@{AddAsync}!OSML.Cache.CacheManager@{OSML.Cache.CacheManager}}
+\subsubsection{\texorpdfstring{AddAsync()}{AddAsync()}}
+{\footnotesize\ttfamily static async Task$<$bool$>$ O\+S\+M\+L.\+Cache.\+Cache\+Manager.\+Add\+Async (\begin{DoxyParamCaption}\item[{string}]{real\+\_\+folder\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+$<$surmary$>$ Creates new cache instance. $<$/surmary$>$ \begin{DoxyReturn}{Returns}
+bool true -\/ cache successfuly created. false -\/ unable to create cache. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em real\+\_\+folder\+\_\+path} & Real folder path(pointing path). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheManager_a958c9e18525ae24dc5dd3c3a34a201f6}\label{classOSML_1_1Cache_1_1CacheManager_a958c9e18525ae24dc5dd3c3a34a201f6}} 
+\index{OSML.Cache.CacheManager@{OSML.Cache.CacheManager}!RemoveAsync@{RemoveAsync}}
+\index{RemoveAsync@{RemoveAsync}!OSML.Cache.CacheManager@{OSML.Cache.CacheManager}}
+\subsubsection{\texorpdfstring{RemoveAsync()}{RemoveAsync()}}
+{\footnotesize\ttfamily static async Task O\+S\+M\+L.\+Cache.\+Cache\+Manager.\+Remove\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}}}]{cpointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+$<$surmary$>$ Removes specific cache(xml file). $<$/surmary$>$ 
+\begin{DoxyParams}{Parameters}
+{\em cpointer} & C\+Pointer(\+Cache pointer)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheManager_aeb65d11786064f146f115d0f642e96ab}\label{classOSML_1_1Cache_1_1CacheManager_aeb65d11786064f146f115d0f642e96ab}} 
+\index{OSML.Cache.CacheManager@{OSML.Cache.CacheManager}!UpdateAsync@{UpdateAsync}}
+\index{UpdateAsync@{UpdateAsync}!OSML.Cache.CacheManager@{OSML.Cache.CacheManager}}
+\subsubsection{\texorpdfstring{UpdateAsync()}{UpdateAsync()}}
+{\footnotesize\ttfamily static async Task$<$bool$>$ O\+S\+M\+L.\+Cache.\+Cache\+Manager.\+Update\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}}}]{c\+\_\+pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+$<$surmary$>$ Checks if content of pointing folder has changed since last update, and updates Folder\+List. $<$/surmary$>$ \begin{DoxyReturn}{Returns}
+bool true -\/ Update successful. false -\/ Update failed. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em cache\+\_\+pointer} & \mbox{\hyperlink{namespaceOSML_1_1Cache}{Cache}} pointer(\+Cpointer)\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/\+Cache/Cache\+Manager.\+cs\end{DoxyCompactItemize}

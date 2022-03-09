@@ -1,0 +1,146 @@
+\hypertarget{classOSML_1_1Cache_1_1CacheDataHelper}{}\section{O\+S\+M\+L.\+Cache.\+Cache\+Data\+Helper Class Reference}
+\label{classOSML_1_1Cache_1_1CacheDataHelper}\index{OSML.Cache.CacheDataHelper@{OSML.Cache.CacheDataHelper}}
+
+
+Main cache helping data operations. Contains basic helping methods for cache data. Info\+: Preinit methods -\/ methods that can be used without core initialization. Init methods -\/ methods that can be used only at initialization or after initialization.  
+
+
+Inheritance diagram for O\+S\+M\+L.\+Cache.\+Cache\+Data\+Helper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classOSML_1_1Cache_1_1CacheDataHelper}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheDataHelper_ad34c09c5cc41a7a3abf1e8ae52536059}{Cache\+Exists}} (string cache\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Checks if specified cache exists(folder). Uses cache unique identifier for checking. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheDataHelper_a84f1e547e99fbc5f223786d39c605e83}{Db\+Contains\+Pointing\+Path}} (string pointing\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Checks if cache with specified pointing path is loaded in databse (after init method). \end{DoxyCompactList}\item 
+static async Task$<$ bool $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheDataHelper_ae5e19c58ce564389ec25728aad35ffa4}{Db\+Contains\+Pointing\+Path\+Async}} (string pointing\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Checks if cache with specified pointing path is loaded in databse (after init method). \end{DoxyCompactList}\item 
+static System.\+Collections.\+Generic.\+List$<$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheDataHelper_af88f60164b288507fbd0b457d23271ce}{Get\+All\+Caches}} ()
+\begin{DoxyCompactList}\small\item\em Gets all currently cached folders(preinit or after init method) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheDataHelper_a27914b5a767dc440dfd4ccf8b68965f9}{Is\+Cache\+Loaded}} (string real\+\_\+folder\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Checks if cache is loaded(init or after init method). Check is performed by pointing path(origin folder path). Unoptimised(\+S\+Q\+L migration) \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheObj}{Cache\+Obj}} \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheDataHelper_a3307f454b4daa9701f76200c5e082a88}{Get\+Cache\+Obj}} (string real\+\_\+folder\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Gets \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheObj}{Cache\+Obj}} from pointing path(init or after init method). Note\+: Folder\+List needs to be initialized before using this method. Else null will be returned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main cache helping data operations. Contains basic helping methods for cache data. Info\+: Preinit methods -\/ methods that can be used without core initialization. Init methods -\/ methods that can be used only at initialization or after initialization. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheDataHelper_ad34c09c5cc41a7a3abf1e8ae52536059}\label{classOSML_1_1Cache_1_1CacheDataHelper_ad34c09c5cc41a7a3abf1e8ae52536059}} 
+\index{OSML.Cache.CacheDataHelper@{OSML.Cache.CacheDataHelper}!CacheExists@{CacheExists}}
+\index{CacheExists@{CacheExists}!OSML.Cache.CacheDataHelper@{OSML.Cache.CacheDataHelper}}
+\subsubsection{\texorpdfstring{CacheExists()}{CacheExists()}}
+{\footnotesize\ttfamily static bool O\+S\+M\+L.\+Cache.\+Cache\+Data\+Helper.\+Cache\+Exists (\begin{DoxyParamCaption}\item[{string}]{cache\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Checks if specified cache exists(folder). Uses cache unique identifier for checking. 
+
+\begin{DoxyReturn}{Returns}
+bool(true -\/ exists, false -\/ does not exist). 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em cache\+\_\+name} & \mbox{\hyperlink{namespaceOSML_1_1Cache}{Cache}} name(ex. 0).\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheDataHelper_a84f1e547e99fbc5f223786d39c605e83}\label{classOSML_1_1Cache_1_1CacheDataHelper_a84f1e547e99fbc5f223786d39c605e83}} 
+\index{OSML.Cache.CacheDataHelper@{OSML.Cache.CacheDataHelper}!DbContainsPointingPath@{DbContainsPointingPath}}
+\index{DbContainsPointingPath@{DbContainsPointingPath}!OSML.Cache.CacheDataHelper@{OSML.Cache.CacheDataHelper}}
+\subsubsection{\texorpdfstring{DbContainsPointingPath()}{DbContainsPointingPath()}}
+{\footnotesize\ttfamily static bool O\+S\+M\+L.\+Cache.\+Cache\+Data\+Helper.\+Db\+Contains\+Pointing\+Path (\begin{DoxyParamCaption}\item[{string}]{pointing\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Checks if cache with specified pointing path is loaded in databse (after init method). 
+
+\begin{DoxyReturn}{Returns}
+bool(true -\/ exists, false -\/ does not exist). 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em pointing\+\_\+path} & Pointing path(origin folder path).\\
+\hline
+\end{DoxyParams}
+Above code throws System.\+Invalid\+Operation\+Exception\+: No current row. This is temporary fix. \mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheDataHelper_ae5e19c58ce564389ec25728aad35ffa4}\label{classOSML_1_1Cache_1_1CacheDataHelper_ae5e19c58ce564389ec25728aad35ffa4}} 
+\index{OSML.Cache.CacheDataHelper@{OSML.Cache.CacheDataHelper}!DbContainsPointingPathAsync@{DbContainsPointingPathAsync}}
+\index{DbContainsPointingPathAsync@{DbContainsPointingPathAsync}!OSML.Cache.CacheDataHelper@{OSML.Cache.CacheDataHelper}}
+\subsubsection{\texorpdfstring{DbContainsPointingPathAsync()}{DbContainsPointingPathAsync()}}
+{\footnotesize\ttfamily static async Task$<$bool$>$ O\+S\+M\+L.\+Cache.\+Cache\+Data\+Helper.\+Db\+Contains\+Pointing\+Path\+Async (\begin{DoxyParamCaption}\item[{string}]{pointing\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Checks if cache with specified pointing path is loaded in databse (after init method). 
+
+\begin{DoxyReturn}{Returns}
+bool(true -\/ exists, false -\/ does not exist). 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em pointing\+\_\+path} & Pointing path(origin folder path).\\
+\hline
+\end{DoxyParams}
+Above code throws System.\+Invalid\+Operation\+Exception\+: No current row. This is temporary fix. \mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheDataHelper_af88f60164b288507fbd0b457d23271ce}\label{classOSML_1_1Cache_1_1CacheDataHelper_af88f60164b288507fbd0b457d23271ce}} 
+\index{OSML.Cache.CacheDataHelper@{OSML.Cache.CacheDataHelper}!GetAllCaches@{GetAllCaches}}
+\index{GetAllCaches@{GetAllCaches}!OSML.Cache.CacheDataHelper@{OSML.Cache.CacheDataHelper}}
+\subsubsection{\texorpdfstring{GetAllCaches()}{GetAllCaches()}}
+{\footnotesize\ttfamily static System.\+Collections.\+Generic.\+List$<$\mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}}$>$ O\+S\+M\+L.\+Cache.\+Cache\+Data\+Helper.\+Get\+All\+Caches (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets all currently cached folders(preinit or after init method) 
+
+\begin{DoxyReturn}{Returns}
+List Cpointer (cache pointer) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheDataHelper_a3307f454b4daa9701f76200c5e082a88}\label{classOSML_1_1Cache_1_1CacheDataHelper_a3307f454b4daa9701f76200c5e082a88}} 
+\index{OSML.Cache.CacheDataHelper@{OSML.Cache.CacheDataHelper}!GetCacheObj@{GetCacheObj}}
+\index{GetCacheObj@{GetCacheObj}!OSML.Cache.CacheDataHelper@{OSML.Cache.CacheDataHelper}}
+\subsubsection{\texorpdfstring{GetCacheObj()}{GetCacheObj()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheObj}{Cache\+Obj}} O\+S\+M\+L.\+Cache.\+Cache\+Data\+Helper.\+Get\+Cache\+Obj (\begin{DoxyParamCaption}\item[{string}]{real\+\_\+folder\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheObj}{Cache\+Obj}} from pointing path(init or after init method). Note\+: Folder\+List needs to be initialized before using this method. Else null will be returned. 
+
+Unoptimised(\+S\+Q\+L migration). 
+
+\begin{DoxyReturn}{Returns}
+Cache\+Obj(\+Cache object). 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em real\+\_\+folder\+\_\+path} & Pointing path(origin folder path).\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheDataHelper_a27914b5a767dc440dfd4ccf8b68965f9}\label{classOSML_1_1Cache_1_1CacheDataHelper_a27914b5a767dc440dfd4ccf8b68965f9}} 
+\index{OSML.Cache.CacheDataHelper@{OSML.Cache.CacheDataHelper}!IsCacheLoaded@{IsCacheLoaded}}
+\index{IsCacheLoaded@{IsCacheLoaded}!OSML.Cache.CacheDataHelper@{OSML.Cache.CacheDataHelper}}
+\subsubsection{\texorpdfstring{IsCacheLoaded()}{IsCacheLoaded()}}
+{\footnotesize\ttfamily static bool O\+S\+M\+L.\+Cache.\+Cache\+Data\+Helper.\+Is\+Cache\+Loaded (\begin{DoxyParamCaption}\item[{string}]{real\+\_\+folder\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Checks if cache is loaded(init or after init method). Check is performed by pointing path(origin folder path). Unoptimised(\+S\+Q\+L migration) 
+
+\begin{DoxyReturn}{Returns}
+bool(true -\/ exists, false -\/ does not exist). 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em real\+\_\+folder\+\_\+path} & Pointing path(origin folder path).\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/\+Cache/\+Helpers/Cache\+Data\+Helper.\+cs\end{DoxyCompactItemize}

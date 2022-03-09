@@ -1,0 +1,65 @@
+\hypertarget{classOSML_1_1Cache_1_1CacheInit}{}\section{O\+S\+M\+L.\+Cache.\+Cache\+Init Class Reference}
+\label{classOSML_1_1Cache_1_1CacheInit}\index{OSML.Cache.CacheInit@{OSML.Cache.CacheInit}}
+
+
+Main cache initializer  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static async Task \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheInit_a69c54afb3ce3a5c203b5721209d6e171}{Run}} ()
+\begin{DoxyCompactList}\small\item\em Complete \mbox{\hyperlink{classOSML_1_1Initialization}{Initialization}} of cache. \end{DoxyCompactList}\item 
+static async Task$<$ bool $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheInit_a98bab831f4b3c30b6c932941d4188b28}{Update\+C\+P\+Db\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Update(or reinti) cache\+\_\+pointers table. Main use\+: \mbox{\hyperlink{classOSML_1_1Initialization}{Initialization}} and reintialization. \end{DoxyCompactList}\item 
+static async Task$<$ bool $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheInit_a56b31b12176e0eedb18e704e9f1539d5}{Update\+Cache\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Update(or reinit) Cache(database and Folder\+List) from C\+Pointers. Main use\+: \mbox{\hyperlink{classOSML_1_1Initialization}{Initialization}} and reintialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main cache initializer 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheInit_a69c54afb3ce3a5c203b5721209d6e171}\label{classOSML_1_1Cache_1_1CacheInit_a69c54afb3ce3a5c203b5721209d6e171}} 
+\index{OSML.Cache.CacheInit@{OSML.Cache.CacheInit}!Run@{Run}}
+\index{Run@{Run}!OSML.Cache.CacheInit@{OSML.Cache.CacheInit}}
+\subsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily static async Task O\+S\+M\+L.\+Cache.\+Cache\+Init.\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Complete \mbox{\hyperlink{classOSML_1_1Initialization}{Initialization}} of cache. 
+
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheInit_a56b31b12176e0eedb18e704e9f1539d5}\label{classOSML_1_1Cache_1_1CacheInit_a56b31b12176e0eedb18e704e9f1539d5}} 
+\index{OSML.Cache.CacheInit@{OSML.Cache.CacheInit}!UpdateCacheAsync@{UpdateCacheAsync}}
+\index{UpdateCacheAsync@{UpdateCacheAsync}!OSML.Cache.CacheInit@{OSML.Cache.CacheInit}}
+\subsubsection{\texorpdfstring{UpdateCacheAsync()}{UpdateCacheAsync()}}
+{\footnotesize\ttfamily static async Task$<$bool$>$ O\+S\+M\+L.\+Cache.\+Cache\+Init.\+Update\+Cache\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Update(or reinit) Cache(database and Folder\+List) from C\+Pointers. Main use\+: \mbox{\hyperlink{classOSML_1_1Initialization}{Initialization}} and reintialization. 
+
+\begin{DoxyReturn}{Returns}
+bool false -\/ C\+P\+Db\+Manager.\+Pointers is null, fallback. true -\/ Update successfull. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheInit_a98bab831f4b3c30b6c932941d4188b28}\label{classOSML_1_1Cache_1_1CacheInit_a98bab831f4b3c30b6c932941d4188b28}} 
+\index{OSML.Cache.CacheInit@{OSML.Cache.CacheInit}!UpdateCPDbAsync@{UpdateCPDbAsync}}
+\index{UpdateCPDbAsync@{UpdateCPDbAsync}!OSML.Cache.CacheInit@{OSML.Cache.CacheInit}}
+\subsubsection{\texorpdfstring{UpdateCPDbAsync()}{UpdateCPDbAsync()}}
+{\footnotesize\ttfamily static async Task$<$bool$>$ O\+S\+M\+L.\+Cache.\+Cache\+Init.\+Update\+C\+P\+Db\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Update(or reinti) cache\+\_\+pointers table. Main use\+: \mbox{\hyperlink{classOSML_1_1Initialization}{Initialization}} and reintialization. 
+
+\begin{DoxyReturn}{Returns}
+bool false -\/ \mbox{\hyperlink{namespaceOSML_1_1Cache}{Cache}} pointer table update unsuccessfull. true -\/ Update successfull. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/\+Cache/Cache\+Init.\+cs\end{DoxyCompactItemize}

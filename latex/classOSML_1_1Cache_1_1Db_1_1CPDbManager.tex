@@ -1,0 +1,146 @@
+\hypertarget{classOSML_1_1Cache_1_1Db_1_1CPDbManager}{}\section{O\+S\+M\+L.\+Cache.\+Db.\+C\+P\+Db\+Manager Class Reference}
+\label{classOSML_1_1Cache_1_1Db_1_1CPDbManager}\index{OSML.Cache.Db.CPDbManager@{OSML.Cache.Db.CPDbManager}}
+
+
+Main class for managing cache\+\_\+pointers table. Contains main table methods.  
+
+
+Inheritance diagram for O\+S\+M\+L.\+Cache.\+Db.\+C\+P\+Db\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classOSML_1_1Cache_1_1Db_1_1CPDbManager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task$<$ bool $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1Db_1_1CPDbManager_aa379e13e88129489f76fd403a21e8f6c}{Update\+Data\+Base\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Updates cache\+\_\+pointer table. Can be used for reinitialization. Note\+: Due recent \mbox{\hyperlink{namespaceOSML_1_1SQL}{S\+QL}} migration table first needs to be removed, and then readed for reinitialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static async Task$<$ List$<$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} $>$ $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a6929050942d7f04fc1066d494549baa7}{Get\+Pointers\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} List(async) from table. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a749855f3f472e9e55d3902c7fc2ad182}\label{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a749855f3f472e9e55d3902c7fc2ad182}} 
+static List$<$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} $>$ {\bfseries Get\+Pointers} ()
+\item 
+static \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} \mbox{\hyperlink{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a795e89a6f96f96feb2fab051817005d3}{Get\+C\+Pointer\+From\+Pointing\+Path}} (string pointing\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} object(from table) based on pointing path. \end{DoxyCompactList}\item 
+static async Task$<$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a60a143a4ce5799ac85101be5d1911c9a}{Get\+C\+Pointer\+From\+Pointing\+Path\+Async}} (string pointing\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} object(from table) based on pointing path(async). \end{DoxyCompactList}\item 
+static async Task$<$ bool $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a1b69a9baeb45ca4d745750a8b24c9587}{Remove\+Row\+From\+Table\+By\+Pointing\+Path\+Async}} (string pointing\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Remove row from the table that contains specific pointing\+\_\+path \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1Db_1_1CPDbManager_adabfcee3456023de52c6984935bf1c86}{Pointers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets list of C\+Pointers. Uses Get\+Pointers(); \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main class for managing cache\+\_\+pointers table. Contains main table methods. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a795e89a6f96f96feb2fab051817005d3}\label{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a795e89a6f96f96feb2fab051817005d3}} 
+\index{OSML.Cache.Db.CPDbManager@{OSML.Cache.Db.CPDbManager}!GetCPointerFromPointingPath@{GetCPointerFromPointingPath}}
+\index{GetCPointerFromPointingPath@{GetCPointerFromPointingPath}!OSML.Cache.Db.CPDbManager@{OSML.Cache.Db.CPDbManager}}
+\subsubsection{\texorpdfstring{GetCPointerFromPointingPath()}{GetCPointerFromPointingPath()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} O\+S\+M\+L.\+Cache.\+Db.\+C\+P\+Db\+Manager.\+Get\+C\+Pointer\+From\+Pointing\+Path (\begin{DoxyParamCaption}\item[{string}]{pointing\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} object(from table) based on pointing path. 
+
+\begin{DoxyReturn}{Returns}
+C\+Pointer(cache pointer) 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em pointing\+\_\+path} & Pointing path(origin folder path).\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a60a143a4ce5799ac85101be5d1911c9a}\label{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a60a143a4ce5799ac85101be5d1911c9a}} 
+\index{OSML.Cache.Db.CPDbManager@{OSML.Cache.Db.CPDbManager}!GetCPointerFromPointingPathAsync@{GetCPointerFromPointingPathAsync}}
+\index{GetCPointerFromPointingPathAsync@{GetCPointerFromPointingPathAsync}!OSML.Cache.Db.CPDbManager@{OSML.Cache.Db.CPDbManager}}
+\subsubsection{\texorpdfstring{GetCPointerFromPointingPathAsync()}{GetCPointerFromPointingPathAsync()}}
+{\footnotesize\ttfamily static async Task$<$\mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}}$>$ O\+S\+M\+L.\+Cache.\+Db.\+C\+P\+Db\+Manager.\+Get\+C\+Pointer\+From\+Pointing\+Path\+Async (\begin{DoxyParamCaption}\item[{string}]{pointing\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} object(from table) based on pointing path(async). 
+
+\begin{DoxyReturn}{Returns}
+C\+Pointer(cache pointer) 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em pointing\+\_\+path} & Pointing path(origin folder path).\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a6929050942d7f04fc1066d494549baa7}\label{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a6929050942d7f04fc1066d494549baa7}} 
+\index{OSML.Cache.Db.CPDbManager@{OSML.Cache.Db.CPDbManager}!GetPointersAsync@{GetPointersAsync}}
+\index{GetPointersAsync@{GetPointersAsync}!OSML.Cache.Db.CPDbManager@{OSML.Cache.Db.CPDbManager}}
+\subsubsection{\texorpdfstring{GetPointersAsync()}{GetPointersAsync()}}
+{\footnotesize\ttfamily static async Task$<$List$<$\mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}}$>$ $>$ O\+S\+M\+L.\+Cache.\+Db.\+C\+P\+Db\+Manager.\+Get\+Pointers\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} List(async) from table. 
+
+\begin{DoxyReturn}{Returns}
+List$<$\+C\+Pointer$>$ 
+\end{DoxyReturn}
+summary$>$ Get \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} List from table. summary$>$ \begin{DoxyReturn}{Returns}
+List$<$\+C\+Pointer$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a1b69a9baeb45ca4d745750a8b24c9587}\label{classOSML_1_1Cache_1_1Db_1_1CPDbManager_a1b69a9baeb45ca4d745750a8b24c9587}} 
+\index{OSML.Cache.Db.CPDbManager@{OSML.Cache.Db.CPDbManager}!RemoveRowFromTableByPointingPathAsync@{RemoveRowFromTableByPointingPathAsync}}
+\index{RemoveRowFromTableByPointingPathAsync@{RemoveRowFromTableByPointingPathAsync}!OSML.Cache.Db.CPDbManager@{OSML.Cache.Db.CPDbManager}}
+\subsubsection{\texorpdfstring{RemoveRowFromTableByPointingPathAsync()}{RemoveRowFromTableByPointingPathAsync()}}
+{\footnotesize\ttfamily static async Task$<$bool$>$ O\+S\+M\+L.\+Cache.\+Db.\+C\+P\+Db\+Manager.\+Remove\+Row\+From\+Table\+By\+Pointing\+Path\+Async (\begin{DoxyParamCaption}\item[{string}]{pointing\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Remove row from the table that contains specific pointing\+\_\+path 
+
+\begin{DoxyReturn}{Returns}
+bool true -\/ removed false -\/ not in the table(not removed) 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em pointing\+\_\+path} & Pointing path(origin folder path).\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Db_1_1CPDbManager_aa379e13e88129489f76fd403a21e8f6c}\label{classOSML_1_1Cache_1_1Db_1_1CPDbManager_aa379e13e88129489f76fd403a21e8f6c}} 
+\index{OSML.Cache.Db.CPDbManager@{OSML.Cache.Db.CPDbManager}!UpdateDataBaseAsync@{UpdateDataBaseAsync}}
+\index{UpdateDataBaseAsync@{UpdateDataBaseAsync}!OSML.Cache.Db.CPDbManager@{OSML.Cache.Db.CPDbManager}}
+\subsubsection{\texorpdfstring{UpdateDataBaseAsync()}{UpdateDataBaseAsync()}}
+{\footnotesize\ttfamily async Task$<$bool$>$ O\+S\+M\+L.\+Cache.\+Db.\+C\+P\+Db\+Manager.\+Update\+Data\+Base\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates cache\+\_\+pointer table. Can be used for reinitialization. Note\+: Due recent \mbox{\hyperlink{namespaceOSML_1_1SQL}{S\+QL}} migration table first needs to be removed, and then readed for reinitialization. 
+
+\begin{DoxyReturn}{Returns}
+bool true -\/ updated(populated) successfully false -\/ update(populate) not successfull 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Db_1_1CPDbManager_adabfcee3456023de52c6984935bf1c86}\label{classOSML_1_1Cache_1_1Db_1_1CPDbManager_adabfcee3456023de52c6984935bf1c86}} 
+\index{OSML.Cache.Db.CPDbManager@{OSML.Cache.Db.CPDbManager}!Pointers@{Pointers}}
+\index{Pointers@{Pointers}!OSML.Cache.Db.CPDbManager@{OSML.Cache.Db.CPDbManager}}
+\subsubsection{\texorpdfstring{Pointers}{Pointers}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}}$>$ O\+S\+M\+L.\+Cache.\+Db.\+C\+P\+Db\+Manager.\+Pointers\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets list of C\+Pointers. Uses Get\+Pointers(); 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/\+Cache/\+Initializer/\+Db/C\+P\+Db\+Manager.\+cs\end{DoxyCompactItemize}

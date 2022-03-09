@@ -1,0 +1,60 @@
+\hypertarget{namespaceOSML_1_1Cache}{}\section{O\+S\+M\+L.\+Cache Namespace Reference}
+\label{namespaceOSML_1_1Cache}\index{OSML.Cache@{OSML.Cache}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheDataHelper}{Cache\+Data\+Helper}}
+\begin{DoxyCompactList}\small\item\em Main cache helping data operations. Contains basic helping methods for cache data. Info\+: Preinit methods -\/ methods that can be used without core initialization. Init methods -\/ methods that can be used only at initialization or after initialization. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheInit}{Cache\+Init}}
+\begin{DoxyCompactList}\small\item\em Main cache initializer \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheLister}{Cache\+Lister}}
+\begin{DoxyCompactList}\small\item\em Main cache data fetcher(xml). Can be used without initialization \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheManager}{Cache\+Manager}}
+\item 
+class \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheObj}{Cache\+Obj}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespaceOSML_1_1Cache}{Cache}} object. Contains all data about specific cache. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheSubObj}{Cache\+Sub\+Obj}}
+\begin{DoxyCompactList}\small\item\em Represents subfolder of cached folder(pointing folder) Obsolete \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespaceOSML_1_1Cache}{Cache}} pointers. C\+Pointers are basic objects made from current caches. They contain three(3) basic info\+: Cache\+Name\+: Name of cache. Cache\+Folder\+Path\+: Path of cache. Pointing\+Path\+: Pointing path to folder that is used to make this cache. Used for initialization. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOSML_1_1Cache_1_1CurrentCData}{Current\+C\+Data}}
+\item 
+class \mbox{\hyperlink{classOSML_1_1Cache_1_1LibrraryInfo}{Librrary\+Info}}
+\begin{DoxyCompactList}\small\item\em Barebones info for cache(library) object Obsolete \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classOSML_1_1Cache_1_1ObjectHelper}{Object\+Helper}}
+\begin{DoxyCompactList}\small\item\em Unused \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceOSML_1_1Cache_aeff1659e13b8ebe939aafedcd5f9fed7}{Update\+Result}} \{ \mbox{\hyperlink{namespaceOSML_1_1Cache_aeff1659e13b8ebe939aafedcd5f9fed7aadab3ef1833d5a927a519930b29c1c03}{Update\+Result.\+successfull}} = 0, 
+\mbox{\hyperlink{namespaceOSML_1_1Cache_aeff1659e13b8ebe939aafedcd5f9fed7ab8c1503b9f640b4f35636151c94a4fa3}{Update\+Result.\+successfull\+\_\+warning}} = 1, 
+\mbox{\hyperlink{namespaceOSML_1_1Cache_aeff1659e13b8ebe939aafedcd5f9fed7acb5e100e5a9a3e7f6d1fd97512215282}{Update\+Result.\+error}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Constant values used for reporting update status(db, Folder\+List) Migration needed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceOSML_1_1Cache_aeff1659e13b8ebe939aafedcd5f9fed7}\label{namespaceOSML_1_1Cache_aeff1659e13b8ebe939aafedcd5f9fed7}} 
+\index{OSML.Cache@{OSML.Cache}!UpdateResult@{UpdateResult}}
+\index{UpdateResult@{UpdateResult}!OSML.Cache@{OSML.Cache}}
+\subsubsection{\texorpdfstring{UpdateResult}{UpdateResult}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceOSML_1_1Cache_aeff1659e13b8ebe939aafedcd5f9fed7}{O\+S\+M\+L.\+Cache.\+Update\+Result}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Constant values used for reporting update status(db, Folder\+List) Migration needed. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{successfull@{successfull}!OSML.Cache@{OSML.Cache}}\index{OSML.Cache@{OSML.Cache}!successfull@{successfull}}}\mbox{\Hypertarget{namespaceOSML_1_1Cache_aeff1659e13b8ebe939aafedcd5f9fed7aadab3ef1833d5a927a519930b29c1c03}\label{namespaceOSML_1_1Cache_aeff1659e13b8ebe939aafedcd5f9fed7aadab3ef1833d5a927a519930b29c1c03}} 
+successfull&\mbox{\hyperlink{namespaceOSML_1_1Cache}{Cache}} update successfull. Value\+: 0. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{successfull\_warning@{successfull\_warning}!OSML.Cache@{OSML.Cache}}\index{OSML.Cache@{OSML.Cache}!successfull\_warning@{successfull\_warning}}}\mbox{\Hypertarget{namespaceOSML_1_1Cache_aeff1659e13b8ebe939aafedcd5f9fed7ab8c1503b9f640b4f35636151c94a4fa3}\label{namespaceOSML_1_1Cache_aeff1659e13b8ebe939aafedcd5f9fed7ab8c1503b9f640b4f35636151c94a4fa3}} 
+successfull\+\_\+warning&\mbox{\hyperlink{namespaceOSML_1_1Cache}{Cache}} updated sucessfully with some errors. Value\+: 1. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{error@{error}!OSML.Cache@{OSML.Cache}}\index{OSML.Cache@{OSML.Cache}!error@{error}}}\mbox{\Hypertarget{namespaceOSML_1_1Cache_aeff1659e13b8ebe939aafedcd5f9fed7acb5e100e5a9a3e7f6d1fd97512215282}\label{namespaceOSML_1_1Cache_aeff1659e13b8ebe939aafedcd5f9fed7acb5e100e5a9a3e7f6d1fd97512215282}} 
+error&\mbox{\hyperlink{namespaceOSML_1_1Cache}{Cache}} encountered error while updateing. Value\+: 2. \\
+\hline
+
+\end{DoxyEnumFields}

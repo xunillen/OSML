@@ -1,0 +1,99 @@
+\hypertarget{classOSML_1_1SQL_1_1SQLDbManager}{}\section{O\+S\+M\+L.\+S\+Q\+L.\+S\+Q\+L\+Db\+Manager Class Reference}
+\label{classOSML_1_1SQL_1_1SQLDbManager}\index{OSML.SQL.SQLDbManager@{OSML.SQL.SQLDbManager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classOSML_1_1SQL_1_1SQLDbManager_ad26fb300a212ef1b84ff8991c9a27939}\label{classOSML_1_1SQL_1_1SQLDbManager_ad26fb300a212ef1b84ff8991c9a27939}} 
+{\bfseries S\+Q\+L\+Db\+Manager} (S\+Q\+Lite\+Connection sql\+\_\+connection)
+\item 
+async Task$<$ bool $>$ \mbox{\hyperlink{classOSML_1_1SQL_1_1SQLDbManager_a03ff59fabe73b74907fd714a3f84311e}{Table\+Contains\+Data\+Async}} (string table, string param, string value)
+\begin{DoxyCompactList}\small\item\em Checks if specified table contains specified data. ex. S\+E\+L\+E\+CT 1 F\+R\+OM table W\+H\+E\+RE param = value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOSML_1_1SQL_1_1SQLDbManager_a5720ab26bbf742446eac817e80ea22a6}{Remove\+Data\+From\+Table}} (string table\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Delete all content from specified table \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{classOSML_1_1SQL_1_1SQLDbManager_a05cda1ed133ece2d363f531c865b76de}{Remove\+Data\+From\+Table\+Async}} (string table\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Delete all content from specified table(async) \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{classOSML_1_1SQL_1_1SQLDbManager_a5118e36397a914f95ee1cd51675c7d06}{Drop\+Table}} (string table\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Drop specific table. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{classOSML_1_1SQL_1_1SQLDbManager_afaaaf7303202a86ee7730e7b4a108302}{Drop\+Table\+Async}} (string table\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Drops specific table(if exists) from database(async). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classOSML_1_1SQL_1_1SQLDbManager_a81e6f2c59f2bd3e24de336f2915a8c71}\label{classOSML_1_1SQL_1_1SQLDbManager_a81e6f2c59f2bd3e24de336f2915a8c71}} 
+S\+Q\+Lite\+Connection {\bfseries S\+Q\+L\+Connection}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSML_1_1SQL_1_1SQLDbManager_a5118e36397a914f95ee1cd51675c7d06}\label{classOSML_1_1SQL_1_1SQLDbManager_a5118e36397a914f95ee1cd51675c7d06}} 
+\index{OSML.SQL.SQLDbManager@{OSML.SQL.SQLDbManager}!DropTable@{DropTable}}
+\index{DropTable@{DropTable}!OSML.SQL.SQLDbManager@{OSML.SQL.SQLDbManager}}
+\subsubsection{\texorpdfstring{DropTable()}{DropTable()}}
+{\footnotesize\ttfamily async Task O\+S\+M\+L.\+S\+Q\+L.\+S\+Q\+L\+Db\+Manager.\+Drop\+Table (\begin{DoxyParamCaption}\item[{string}]{table\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Drop specific table. 
+
+\mbox{\Hypertarget{classOSML_1_1SQL_1_1SQLDbManager_afaaaf7303202a86ee7730e7b4a108302}\label{classOSML_1_1SQL_1_1SQLDbManager_afaaaf7303202a86ee7730e7b4a108302}} 
+\index{OSML.SQL.SQLDbManager@{OSML.SQL.SQLDbManager}!DropTableAsync@{DropTableAsync}}
+\index{DropTableAsync@{DropTableAsync}!OSML.SQL.SQLDbManager@{OSML.SQL.SQLDbManager}}
+\subsubsection{\texorpdfstring{DropTableAsync()}{DropTableAsync()}}
+{\footnotesize\ttfamily async Task O\+S\+M\+L.\+S\+Q\+L.\+S\+Q\+L\+Db\+Manager.\+Drop\+Table\+Async (\begin{DoxyParamCaption}\item[{string}]{table\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Drops specific table(if exists) from database(async). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+\_\+name} & Table to remove.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1SQL_1_1SQLDbManager_a5720ab26bbf742446eac817e80ea22a6}\label{classOSML_1_1SQL_1_1SQLDbManager_a5720ab26bbf742446eac817e80ea22a6}} 
+\index{OSML.SQL.SQLDbManager@{OSML.SQL.SQLDbManager}!RemoveDataFromTable@{RemoveDataFromTable}}
+\index{RemoveDataFromTable@{RemoveDataFromTable}!OSML.SQL.SQLDbManager@{OSML.SQL.SQLDbManager}}
+\subsubsection{\texorpdfstring{RemoveDataFromTable()}{RemoveDataFromTable()}}
+{\footnotesize\ttfamily void O\+S\+M\+L.\+S\+Q\+L.\+S\+Q\+L\+Db\+Manager.\+Remove\+Data\+From\+Table (\begin{DoxyParamCaption}\item[{string}]{table\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Delete all content from specified table 
+
+\mbox{\Hypertarget{classOSML_1_1SQL_1_1SQLDbManager_a05cda1ed133ece2d363f531c865b76de}\label{classOSML_1_1SQL_1_1SQLDbManager_a05cda1ed133ece2d363f531c865b76de}} 
+\index{OSML.SQL.SQLDbManager@{OSML.SQL.SQLDbManager}!RemoveDataFromTableAsync@{RemoveDataFromTableAsync}}
+\index{RemoveDataFromTableAsync@{RemoveDataFromTableAsync}!OSML.SQL.SQLDbManager@{OSML.SQL.SQLDbManager}}
+\subsubsection{\texorpdfstring{RemoveDataFromTableAsync()}{RemoveDataFromTableAsync()}}
+{\footnotesize\ttfamily async Task O\+S\+M\+L.\+S\+Q\+L.\+S\+Q\+L\+Db\+Manager.\+Remove\+Data\+From\+Table\+Async (\begin{DoxyParamCaption}\item[{string}]{table\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Delete all content from specified table(async) 
+
+\mbox{\Hypertarget{classOSML_1_1SQL_1_1SQLDbManager_a03ff59fabe73b74907fd714a3f84311e}\label{classOSML_1_1SQL_1_1SQLDbManager_a03ff59fabe73b74907fd714a3f84311e}} 
+\index{OSML.SQL.SQLDbManager@{OSML.SQL.SQLDbManager}!TableContainsDataAsync@{TableContainsDataAsync}}
+\index{TableContainsDataAsync@{TableContainsDataAsync}!OSML.SQL.SQLDbManager@{OSML.SQL.SQLDbManager}}
+\subsubsection{\texorpdfstring{TableContainsDataAsync()}{TableContainsDataAsync()}}
+{\footnotesize\ttfamily async Task$<$bool$>$ O\+S\+M\+L.\+S\+Q\+L.\+S\+Q\+L\+Db\+Manager.\+Table\+Contains\+Data\+Async (\begin{DoxyParamCaption}\item[{string}]{table,  }\item[{string}]{param,  }\item[{string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if specified table contains specified data. ex. S\+E\+L\+E\+CT 1 F\+R\+OM table W\+H\+E\+RE param = value. 
+
+\begin{DoxyReturn}{Returns}
+bool true -\/ data exists in table false -\/ data does not exsist in the table 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em table} & Table name.\\
+\hline
+{\em param} & Param name.\\
+\hline
+{\em value} & param value.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/sql/S\+Q\+L\+Db\+Manager.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb}{}\section{O\+S\+M\+L.\+Cache.\+Db.\+Osml\+Main\+Db Class Reference}
+\label{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb}\index{OSML.Cache.Db.OsmlMainDb@{OSML.Cache.Db.OsmlMainDb}}
+
+
+Class for setting up Databases.  
+
+
+Inheritance diagram for O\+S\+M\+L.\+Cache.\+Db.\+Osml\+Main\+Db\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task$<$ bool $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb_a4748246289a9eea7ef4b8dbe25c92c75}{Check\+Data\+Base\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Checks databases. If database does not exist, it will create new(tables), else it will renew tables \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static S\+Q\+Lite\+Connection \mbox{\hyperlink{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb_a8ad5975e7c26607bcedb85395e733b31}{Get\+Main\+S\+Q\+L\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em Gets current S\+Q\+Lite\+Connection\+Media(why use this when property is public?) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb_ae7eb2ebd6c06c19cc0b74187d40a4b12}{Close\+Main\+S\+Q\+L\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em Closes S\+Q\+Lite\+Connection\+Media \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static S\+Q\+Lite\+Connection \mbox{\hyperlink{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb_a5e00588ce080185aa96f8ec019597b70}{Main\+S\+Q\+L\+Connection}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Main Database used by library. Currently it contains music\+\_\+audio and cache\+\_\+pointers tables. Accessable through Get\+Cache\+S\+Q\+Lite\+Connection() \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for setting up Databases. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb_a4748246289a9eea7ef4b8dbe25c92c75}\label{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb_a4748246289a9eea7ef4b8dbe25c92c75}} 
+\index{OSML.Cache.Db.OsmlMainDb@{OSML.Cache.Db.OsmlMainDb}!CheckDataBaseAsync@{CheckDataBaseAsync}}
+\index{CheckDataBaseAsync@{CheckDataBaseAsync}!OSML.Cache.Db.OsmlMainDb@{OSML.Cache.Db.OsmlMainDb}}
+\subsubsection{\texorpdfstring{CheckDataBaseAsync()}{CheckDataBaseAsync()}}
+{\footnotesize\ttfamily async Task$<$bool$>$ O\+S\+M\+L.\+Cache.\+Db.\+Osml\+Main\+Db.\+Check\+Data\+Base\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks databases. If database does not exist, it will create new(tables), else it will renew tables 
+
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb_ae7eb2ebd6c06c19cc0b74187d40a4b12}\label{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb_ae7eb2ebd6c06c19cc0b74187d40a4b12}} 
+\index{OSML.Cache.Db.OsmlMainDb@{OSML.Cache.Db.OsmlMainDb}!CloseMainSQLConnection@{CloseMainSQLConnection}}
+\index{CloseMainSQLConnection@{CloseMainSQLConnection}!OSML.Cache.Db.OsmlMainDb@{OSML.Cache.Db.OsmlMainDb}}
+\subsubsection{\texorpdfstring{CloseMainSQLConnection()}{CloseMainSQLConnection()}}
+{\footnotesize\ttfamily static void O\+S\+M\+L.\+Cache.\+Db.\+Osml\+Main\+Db.\+Close\+Main\+S\+Q\+L\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Closes S\+Q\+Lite\+Connection\+Media 
+
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb_a8ad5975e7c26607bcedb85395e733b31}\label{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb_a8ad5975e7c26607bcedb85395e733b31}} 
+\index{OSML.Cache.Db.OsmlMainDb@{OSML.Cache.Db.OsmlMainDb}!GetMainSQLConnection@{GetMainSQLConnection}}
+\index{GetMainSQLConnection@{GetMainSQLConnection}!OSML.Cache.Db.OsmlMainDb@{OSML.Cache.Db.OsmlMainDb}}
+\subsubsection{\texorpdfstring{GetMainSQLConnection()}{GetMainSQLConnection()}}
+{\footnotesize\ttfamily static S\+Q\+Lite\+Connection O\+S\+M\+L.\+Cache.\+Db.\+Osml\+Main\+Db.\+Get\+Main\+S\+Q\+L\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets current S\+Q\+Lite\+Connection\+Media(why use this when property is public?) 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb_a5e00588ce080185aa96f8ec019597b70}\label{classOSML_1_1Cache_1_1Db_1_1OsmlMainDb_a5e00588ce080185aa96f8ec019597b70}} 
+\index{OSML.Cache.Db.OsmlMainDb@{OSML.Cache.Db.OsmlMainDb}!MainSQLConnection@{MainSQLConnection}}
+\index{MainSQLConnection@{MainSQLConnection}!OSML.Cache.Db.OsmlMainDb@{OSML.Cache.Db.OsmlMainDb}}
+\subsubsection{\texorpdfstring{MainSQLConnection}{MainSQLConnection}}
+{\footnotesize\ttfamily S\+Q\+Lite\+Connection O\+S\+M\+L.\+Cache.\+Db.\+Osml\+Main\+Db.\+Main\+S\+Q\+L\+Connection = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Main Database used by library. Currently it contains music\+\_\+audio and cache\+\_\+pointers tables. Accessable through Get\+Cache\+S\+Q\+Lite\+Connection() 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/\+Cache/\+Initializer/\+Db/Osml\+Data\+Base.\+cs\end{DoxyCompactItemize}

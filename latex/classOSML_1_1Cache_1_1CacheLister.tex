@@ -1,0 +1,89 @@
+\hypertarget{classOSML_1_1Cache_1_1CacheLister}{}\section{O\+S\+M\+L.\+Cache.\+Cache\+Lister Class Reference}
+\label{classOSML_1_1Cache_1_1CacheLister}\index{OSML.Cache.CacheLister@{OSML.Cache.CacheLister}}
+
+
+Main cache data fetcher(xml). Can be used without initialization  
+
+
+Inheritance diagram for O\+S\+M\+L.\+Cache.\+Cache\+Lister\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classOSML_1_1Cache_1_1CacheLister}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static async Task$<$ List$<$ \mbox{\hyperlink{classOSML_1_1Media_1_1MediaObj}{Media\+Obj}} $>$ $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheLister_a5ea2d67bd366c49b406ad83bc226a75e}{Get\+Cache\+Media\+Data\+Async}} (string cache\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Get all Media\+Obj(\+Media objects) from specific cache. \end{DoxyCompactList}\item 
+static async Task$<$ I\+Enumerable$<$ X\+Element $>$ $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheLister_a57bb277452fb70ba99b67f98c4ec851d}{Get\+Media\+Elements\+Async}} (string cache\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Select and return all \char`\"{}\+Media\char`\"{} elements from X\+ML data \end{DoxyCompactList}\item 
+static async Task$<$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheObj}{Cache\+Obj}} $>$ \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheLister_a027390d43931a6594324d18550da83aa}{Get\+Cache\+Obj\+Async}} (\mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} cpointer)
+\begin{DoxyCompactList}\small\item\em Create \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheObj}{Cache\+Obj}} based on \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main cache data fetcher(xml). Can be used without initialization 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheLister_a5ea2d67bd366c49b406ad83bc226a75e}\label{classOSML_1_1Cache_1_1CacheLister_a5ea2d67bd366c49b406ad83bc226a75e}} 
+\index{OSML.Cache.CacheLister@{OSML.Cache.CacheLister}!GetCacheMediaDataAsync@{GetCacheMediaDataAsync}}
+\index{GetCacheMediaDataAsync@{GetCacheMediaDataAsync}!OSML.Cache.CacheLister@{OSML.Cache.CacheLister}}
+\subsubsection{\texorpdfstring{GetCacheMediaDataAsync()}{GetCacheMediaDataAsync()}}
+{\footnotesize\ttfamily static async Task$<$List$<$\mbox{\hyperlink{classOSML_1_1Media_1_1MediaObj}{Media\+Obj}}$>$ $>$ O\+S\+M\+L.\+Cache.\+Cache\+Lister.\+Get\+Cache\+Media\+Data\+Async (\begin{DoxyParamCaption}\item[{string}]{cache\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get all Media\+Obj(\+Media objects) from specific cache. 
+
+\begin{DoxyReturn}{Returns}
+List Media\+Obj 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em cache\+\_\+name} & \mbox{\hyperlink{namespaceOSML_1_1Cache}{Cache}} name\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheLister_a027390d43931a6594324d18550da83aa}\label{classOSML_1_1Cache_1_1CacheLister_a027390d43931a6594324d18550da83aa}} 
+\index{OSML.Cache.CacheLister@{OSML.Cache.CacheLister}!GetCacheObjAsync@{GetCacheObjAsync}}
+\index{GetCacheObjAsync@{GetCacheObjAsync}!OSML.Cache.CacheLister@{OSML.Cache.CacheLister}}
+\subsubsection{\texorpdfstring{GetCacheObjAsync()}{GetCacheObjAsync()}}
+{\footnotesize\ttfamily static async Task$<$\mbox{\hyperlink{classOSML_1_1Cache_1_1CacheObj}{Cache\+Obj}}$>$ O\+S\+M\+L.\+Cache.\+Cache\+Lister.\+Get\+Cache\+Obj\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}}}]{cpointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create \mbox{\hyperlink{classOSML_1_1Cache_1_1CacheObj}{Cache\+Obj}} based on \mbox{\hyperlink{classOSML_1_1Cache_1_1CPointer}{C\+Pointer}} 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classOSML_1_1Cache_1_1CacheObj}{Cache\+Obj}} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em cpointer} & \mbox{\hyperlink{namespaceOSML_1_1Cache}{Cache}} pointer(\+C\+Pointer)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Cache_1_1CacheLister_a57bb277452fb70ba99b67f98c4ec851d}\label{classOSML_1_1Cache_1_1CacheLister_a57bb277452fb70ba99b67f98c4ec851d}} 
+\index{OSML.Cache.CacheLister@{OSML.Cache.CacheLister}!GetMediaElementsAsync@{GetMediaElementsAsync}}
+\index{GetMediaElementsAsync@{GetMediaElementsAsync}!OSML.Cache.CacheLister@{OSML.Cache.CacheLister}}
+\subsubsection{\texorpdfstring{GetMediaElementsAsync()}{GetMediaElementsAsync()}}
+{\footnotesize\ttfamily static async Task$<$I\+Enumerable$<$X\+Element$>$ $>$ O\+S\+M\+L.\+Cache.\+Cache\+Lister.\+Get\+Media\+Elements\+Async (\begin{DoxyParamCaption}\item[{string}]{cache\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Select and return all \char`\"{}\+Media\char`\"{} elements from X\+ML data 
+
+\begin{DoxyReturn}{Returns}
+I\+Enumerable X\+Element 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em cache\+\_\+name} & \mbox{\hyperlink{namespaceOSML_1_1Cache}{Cache}} name\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/\+Cache/\+Helpers/Cache\+Lister.\+cs\end{DoxyCompactItemize}

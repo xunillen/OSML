@@ -1,0 +1,222 @@
+\hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2}{}\section{O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2 Class Reference}
+\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2}\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+
+
+\mbox{\hyperlink{namespaceOSML_1_1Media_1_1Metadata_1_1ID3}{I\+D3}} metadata reader Suported versions\+: V2.\+2, V2.\+3, V2.\+4  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_afb6c13b0cf95b443ab31d61296b0476a}{I\+D3\+V2}} (string file\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Initialize \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2}{I\+D3\+V2}} reader \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a87d53935968908a75c9e7afb5237e162}{I\+D3\+V2}} (File\+Stream f\+\_\+stream)
+\begin{DoxyCompactList}\small\item\em Initialize \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2}{I\+D3\+V2}} reader. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_abd35232d1aee120b2f33ea7c8de65b76}{Read}} ()
+\begin{DoxyCompactList}\small\item\em Reads \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2}{I\+D3\+V2}} tag. This also checks if file contains \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2}{I\+D3\+V2}} tag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_aabcdba343eb572c108de63f597085ab6}{Major\+Version}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Major \mbox{\hyperlink{namespaceOSML_1_1Media_1_1Metadata_1_1ID3}{I\+D3}} tag version(first number). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a5b8456132639ddeff6e98940d28f108a}{Minor\+Version}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Minor \mbox{\hyperlink{namespaceOSML_1_1Media_1_1Metadata_1_1ID3}{I\+D3}} tag version(second number). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a365e8b79e460a05d485a606faab0e79e}{Has\+Unsynchronisation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Unsynchronized lyric/text transcription. Not implemented. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a1ca6270002774e034387c83cff22ed15}{Has\+Extended\+Header}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Extended header(4 bytes big endian?). Not implemented. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a917b252f24ebdc47f76a53260c3b7f56}{Is\+Experimental}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Experimental flag. Not implemented. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a868e3582fd175549dd4b71f78fddd530}{Artist}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Artist name. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_abb4a4326c289f867bbb3b144e09caf17}{Title}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Song title. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a69a918dd76e988e63ae800b44505c16f}{Album}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Album name. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_ac60cefe665d77d58ba65c1af5e19794e}{Software\+And\+Hardware\+Used\+For\+Encoding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Name of software and hardware used for encoding. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_ad128d12ff2045726f105fb89e6630e12}{Year}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Year when song was created. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a11705224aca5af5172ab5c69d0b6cefa}{Is\+Version\+Supported}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Definies if version is supported by reader. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a03101364b7b7c2046f63b97ba50c8593}{Is\+Corrupted\+Or\+Unsuported}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Definies if tag is corrupted or unsuported. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{namespaceOSML_1_1Media_1_1Metadata_1_1ID3}{I\+D3}} metadata reader Suported versions\+: V2.\+2, V2.\+3, V2.\+4 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_afb6c13b0cf95b443ab31d61296b0476a}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_afb6c13b0cf95b443ab31d61296b0476a}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!ID3V2@{ID3V2}}
+\index{ID3V2@{ID3V2}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{ID3V2()}{ID3V2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+I\+D3\+V2 (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2}{I\+D3\+V2}} reader 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & Path to file\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a87d53935968908a75c9e7afb5237e162}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a87d53935968908a75c9e7afb5237e162}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!ID3V2@{ID3V2}}
+\index{ID3V2@{ID3V2}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{ID3V2()}{ID3V2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+I\+D3\+V2 (\begin{DoxyParamCaption}\item[{File\+Stream}]{f\+\_\+stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2}{I\+D3\+V2}} reader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+stream} & File stream\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_abd35232d1aee120b2f33ea7c8de65b76}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_abd35232d1aee120b2f33ea7c8de65b76}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!Read@{Read}}
+\index{Read@{Read}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily bool O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2}{I\+D3\+V2}} tag. This also checks if file contains \mbox{\hyperlink{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2}{I\+D3\+V2}} tag. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a69a918dd76e988e63ae800b44505c16f}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a69a918dd76e988e63ae800b44505c16f}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!Album@{Album}}
+\index{Album@{Album}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{Album}{Album}}
+{\footnotesize\ttfamily string O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+Album\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Album name. 
+
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a868e3582fd175549dd4b71f78fddd530}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a868e3582fd175549dd4b71f78fddd530}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!Artist@{Artist}}
+\index{Artist@{Artist}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{Artist}{Artist}}
+{\footnotesize\ttfamily string O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+Artist\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Artist name. 
+
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a1ca6270002774e034387c83cff22ed15}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a1ca6270002774e034387c83cff22ed15}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!HasExtendedHeader@{HasExtendedHeader}}
+\index{HasExtendedHeader@{HasExtendedHeader}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{HasExtendedHeader}{HasExtendedHeader}}
+{\footnotesize\ttfamily bool O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+Has\+Extended\+Header\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Extended header(4 bytes big endian?). Not implemented. 
+
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a365e8b79e460a05d485a606faab0e79e}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a365e8b79e460a05d485a606faab0e79e}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!HasUnsynchronisation@{HasUnsynchronisation}}
+\index{HasUnsynchronisation@{HasUnsynchronisation}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{HasUnsynchronisation}{HasUnsynchronisation}}
+{\footnotesize\ttfamily bool O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+Has\+Unsynchronisation\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Unsynchronized lyric/text transcription. Not implemented. 
+
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a03101364b7b7c2046f63b97ba50c8593}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a03101364b7b7c2046f63b97ba50c8593}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!IsCorruptedOrUnsuported@{IsCorruptedOrUnsuported}}
+\index{IsCorruptedOrUnsuported@{IsCorruptedOrUnsuported}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{IsCorruptedOrUnsuported}{IsCorruptedOrUnsuported}}
+{\footnotesize\ttfamily bool O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+Is\+Corrupted\+Or\+Unsuported\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definies if tag is corrupted or unsuported. 
+
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a917b252f24ebdc47f76a53260c3b7f56}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a917b252f24ebdc47f76a53260c3b7f56}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!IsExperimental@{IsExperimental}}
+\index{IsExperimental@{IsExperimental}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{IsExperimental}{IsExperimental}}
+{\footnotesize\ttfamily bool O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+Is\+Experimental\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Experimental flag. Not implemented. 
+
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a11705224aca5af5172ab5c69d0b6cefa}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a11705224aca5af5172ab5c69d0b6cefa}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!IsVersionSupported@{IsVersionSupported}}
+\index{IsVersionSupported@{IsVersionSupported}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{IsVersionSupported}{IsVersionSupported}}
+{\footnotesize\ttfamily bool O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+Is\+Version\+Supported\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definies if version is supported by reader. 
+
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_aabcdba343eb572c108de63f597085ab6}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_aabcdba343eb572c108de63f597085ab6}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!MajorVersion@{MajorVersion}}
+\index{MajorVersion@{MajorVersion}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{MajorVersion}{MajorVersion}}
+{\footnotesize\ttfamily int O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+Major\+Version\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Major \mbox{\hyperlink{namespaceOSML_1_1Media_1_1Metadata_1_1ID3}{I\+D3}} tag version(first number). 
+
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a5b8456132639ddeff6e98940d28f108a}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_a5b8456132639ddeff6e98940d28f108a}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!MinorVersion@{MinorVersion}}
+\index{MinorVersion@{MinorVersion}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{MinorVersion}{MinorVersion}}
+{\footnotesize\ttfamily int O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+Minor\+Version\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Minor \mbox{\hyperlink{namespaceOSML_1_1Media_1_1Metadata_1_1ID3}{I\+D3}} tag version(second number). 
+
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_ac60cefe665d77d58ba65c1af5e19794e}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_ac60cefe665d77d58ba65c1af5e19794e}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!SoftwareAndHardwareUsedForEncoding@{SoftwareAndHardwareUsedForEncoding}}
+\index{SoftwareAndHardwareUsedForEncoding@{SoftwareAndHardwareUsedForEncoding}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{SoftwareAndHardwareUsedForEncoding}{SoftwareAndHardwareUsedForEncoding}}
+{\footnotesize\ttfamily string O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+Software\+And\+Hardware\+Used\+For\+Encoding\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Name of software and hardware used for encoding. 
+
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_abb4a4326c289f867bbb3b144e09caf17}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_abb4a4326c289f867bbb3b144e09caf17}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!Title@{Title}}
+\index{Title@{Title}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{Title}{Title}}
+{\footnotesize\ttfamily string O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+Title\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Song title. 
+
+\mbox{\Hypertarget{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_ad128d12ff2045726f105fb89e6630e12}\label{classOSML_1_1Media_1_1Metadata_1_1ID3_1_1ID3V2_ad128d12ff2045726f105fb89e6630e12}} 
+\index{OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}!Year@{Year}}
+\index{Year@{Year}!OSML.Media.Metadata.ID3.ID3V2@{OSML.Media.Metadata.ID3.ID3V2}}
+\subsubsection{\texorpdfstring{Year}{Year}}
+{\footnotesize\ttfamily int O\+S\+M\+L.\+Media.\+Metadata.\+I\+D3.\+I\+D3\+V2.\+Year\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Year when song was created. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/\+Media/\+Metadata/\+I\+D3/I\+D3\+V2.\+cs\end{DoxyCompactItemize}

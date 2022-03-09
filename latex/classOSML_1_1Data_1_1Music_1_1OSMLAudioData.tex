@@ -1,0 +1,230 @@
+\hypertarget{classOSML_1_1Data_1_1Music_1_1OSMLAudioData}{}\section{O\+S\+M\+L.\+Data.\+Music.\+O\+S\+M\+L\+Audio\+Data Class Reference}
+\label{classOSML_1_1Data_1_1Music_1_1OSMLAudioData}\index{OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}}
+
+
+Main public Audio\+Data fetcher.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}} $>$ \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a34edf0c6c48e34a22ee634a35e280c74}{Get\+Full\+List}} ()
+\begin{DoxyCompactList}\small\item\em Get all audio from database. \end{DoxyCompactList}\item 
+static async Task$<$ List$<$ \mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}} $>$ $>$ \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a54e9d005b15fbbdc98669b667f11ad44}{Get\+Full\+List\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Get all audio from database(\+Async). \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}} $>$ \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a44522dff16b681e2649f37e135dc1de1}{Get\+From\+Artist}} (string artist\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Get audio from database based on artist name. \end{DoxyCompactList}\item 
+static async Task$<$ List$<$ \mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}} $>$ $>$ \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_ad4f7e4ba9f63728ebc6203ebbc191022}{Get\+From\+Artist\+Async}} (string artist\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Get audio from database based on artist name(async). \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}} $>$ \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a61354400c9e04ef939b1c8731472efe8}{Get\+From\+Album}} (string album\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Get audio from database based on album. \end{DoxyCompactList}\item 
+static async Task$<$ List$<$ \mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}} $>$ $>$ \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a4b7fcb38d92a4bc30a3175b706ed12f6}{Get\+From\+Album\+Async}} (string album\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Get audio from database based on album(async). \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}} $>$ \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_aa160a8b1b2b06fdd9f83ec3d5dc03462}{Get\+From\+Year}} (string year)
+\begin{DoxyCompactList}\small\item\em Get audio from database based on year. \end{DoxyCompactList}\item 
+static async Task$<$ List$<$ \mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}} $>$ $>$ \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a8bd87ed0b02589733ded4479175eac5e}{Get\+From\+Year\+Async}} (string year)
+\begin{DoxyCompactList}\small\item\em Get audio from database based on year(async). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static I\+Enumerable$<$ \mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}} $>$ \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a494a7af2d4115f352e35995f70027a12}{All\+Music}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get all audio from database. Uses \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a34edf0c6c48e34a22ee634a35e280c74}{Get\+Full\+List()}}. \end{DoxyCompactList}\item 
+static List$<$ string $>$ \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_aa8a7c659bffbc411d7b463de7c64b79c}{Albums}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em List of currently loaded album names. Automaticly updated from Audio\+Db\+Manager. \end{DoxyCompactList}\item 
+static List$<$ string $>$ \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_acfcc0260b0e47fbc31d8860bdea51eb2}{Artists}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em List of currently loaded artists names. Automaticly updated from Audio\+Db\+Manager. \end{DoxyCompactList}\item 
+static List$<$ string $>$ \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a629e1cf6d911b7154716e85ce95ca88c}{Years}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em List of currently loaded years. Automaticly updated from Audio\+Db\+Manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main public Audio\+Data fetcher. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a61354400c9e04ef939b1c8731472efe8}\label{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a61354400c9e04ef939b1c8731472efe8}} 
+\index{OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}!GetFromAlbum@{GetFromAlbum}}
+\index{GetFromAlbum@{GetFromAlbum}!OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}}
+\subsubsection{\texorpdfstring{GetFromAlbum()}{GetFromAlbum()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}}$>$ O\+S\+M\+L.\+Data.\+Music.\+O\+S\+M\+L\+Audio\+Data.\+Get\+From\+Album (\begin{DoxyParamCaption}\item[{string}]{album\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get audio from database based on album. 
+
+\begin{DoxyReturn}{Returns}
+List Audio\+Data 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em album\+\_\+name} & album title(name)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a4b7fcb38d92a4bc30a3175b706ed12f6}\label{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a4b7fcb38d92a4bc30a3175b706ed12f6}} 
+\index{OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}!GetFromAlbumAsync@{GetFromAlbumAsync}}
+\index{GetFromAlbumAsync@{GetFromAlbumAsync}!OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}}
+\subsubsection{\texorpdfstring{GetFromAlbumAsync()}{GetFromAlbumAsync()}}
+{\footnotesize\ttfamily static async Task$<$List$<$\mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}}$>$ $>$ O\+S\+M\+L.\+Data.\+Music.\+O\+S\+M\+L\+Audio\+Data.\+Get\+From\+Album\+Async (\begin{DoxyParamCaption}\item[{string}]{album\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get audio from database based on album(async). 
+
+\begin{DoxyReturn}{Returns}
+List Audio\+Data 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em album\+\_\+name} & album title(name)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a44522dff16b681e2649f37e135dc1de1}\label{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a44522dff16b681e2649f37e135dc1de1}} 
+\index{OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}!GetFromArtist@{GetFromArtist}}
+\index{GetFromArtist@{GetFromArtist}!OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}}
+\subsubsection{\texorpdfstring{GetFromArtist()}{GetFromArtist()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}}$>$ O\+S\+M\+L.\+Data.\+Music.\+O\+S\+M\+L\+Audio\+Data.\+Get\+From\+Artist (\begin{DoxyParamCaption}\item[{string}]{artist\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get audio from database based on artist name. 
+
+\begin{DoxyReturn}{Returns}
+List Audio\+Data 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em artist\+\_\+name} & artist name\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_ad4f7e4ba9f63728ebc6203ebbc191022}\label{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_ad4f7e4ba9f63728ebc6203ebbc191022}} 
+\index{OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}!GetFromArtistAsync@{GetFromArtistAsync}}
+\index{GetFromArtistAsync@{GetFromArtistAsync}!OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}}
+\subsubsection{\texorpdfstring{GetFromArtistAsync()}{GetFromArtistAsync()}}
+{\footnotesize\ttfamily static async Task$<$List$<$\mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}}$>$ $>$ O\+S\+M\+L.\+Data.\+Music.\+O\+S\+M\+L\+Audio\+Data.\+Get\+From\+Artist\+Async (\begin{DoxyParamCaption}\item[{string}]{artist\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get audio from database based on artist name(async). 
+
+\begin{DoxyReturn}{Returns}
+List Audio\+Data 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em artist\+\_\+name} & artist name\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_aa160a8b1b2b06fdd9f83ec3d5dc03462}\label{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_aa160a8b1b2b06fdd9f83ec3d5dc03462}} 
+\index{OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}!GetFromYear@{GetFromYear}}
+\index{GetFromYear@{GetFromYear}!OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}}
+\subsubsection{\texorpdfstring{GetFromYear()}{GetFromYear()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}}$>$ O\+S\+M\+L.\+Data.\+Music.\+O\+S\+M\+L\+Audio\+Data.\+Get\+From\+Year (\begin{DoxyParamCaption}\item[{string}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get audio from database based on year. 
+
+\begin{DoxyReturn}{Returns}
+List Audio\+Data 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em year} & year(string)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a8bd87ed0b02589733ded4479175eac5e}\label{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a8bd87ed0b02589733ded4479175eac5e}} 
+\index{OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}!GetFromYearAsync@{GetFromYearAsync}}
+\index{GetFromYearAsync@{GetFromYearAsync}!OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}}
+\subsubsection{\texorpdfstring{GetFromYearAsync()}{GetFromYearAsync()}}
+{\footnotesize\ttfamily static async Task$<$List$<$\mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}}$>$ $>$ O\+S\+M\+L.\+Data.\+Music.\+O\+S\+M\+L\+Audio\+Data.\+Get\+From\+Year\+Async (\begin{DoxyParamCaption}\item[{string}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get audio from database based on year(async). 
+
+\begin{DoxyReturn}{Returns}
+List Audio\+Data 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em year} & year(string)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a34edf0c6c48e34a22ee634a35e280c74}\label{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a34edf0c6c48e34a22ee634a35e280c74}} 
+\index{OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}!GetFullList@{GetFullList}}
+\index{GetFullList@{GetFullList}!OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}}
+\subsubsection{\texorpdfstring{GetFullList()}{GetFullList()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}}$>$ O\+S\+M\+L.\+Data.\+Music.\+O\+S\+M\+L\+Audio\+Data.\+Get\+Full\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get all audio from database. 
+
+\begin{DoxyReturn}{Returns}
+List Audio\+Data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a54e9d005b15fbbdc98669b667f11ad44}\label{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a54e9d005b15fbbdc98669b667f11ad44}} 
+\index{OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}!GetFullListAsync@{GetFullListAsync}}
+\index{GetFullListAsync@{GetFullListAsync}!OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}}
+\subsubsection{\texorpdfstring{GetFullListAsync()}{GetFullListAsync()}}
+{\footnotesize\ttfamily static async Task$<$List$<$\mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}}$>$ $>$ O\+S\+M\+L.\+Data.\+Music.\+O\+S\+M\+L\+Audio\+Data.\+Get\+Full\+List\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get all audio from database(\+Async). 
+
+\begin{DoxyReturn}{Returns}
+List Audio\+Data. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_aa8a7c659bffbc411d7b463de7c64b79c}\label{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_aa8a7c659bffbc411d7b463de7c64b79c}} 
+\index{OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}!Albums@{Albums}}
+\index{Albums@{Albums}!OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}}
+\subsubsection{\texorpdfstring{Albums}{Albums}}
+{\footnotesize\ttfamily List$<$string$>$ O\+S\+M\+L.\+Data.\+Music.\+O\+S\+M\+L\+Audio\+Data.\+Albums\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+List of currently loaded album names. Automaticly updated from Audio\+Db\+Manager. 
+
+\mbox{\Hypertarget{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a494a7af2d4115f352e35995f70027a12}\label{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a494a7af2d4115f352e35995f70027a12}} 
+\index{OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}!AllMusic@{AllMusic}}
+\index{AllMusic@{AllMusic}!OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}}
+\subsubsection{\texorpdfstring{AllMusic}{AllMusic}}
+{\footnotesize\ttfamily I\+Enumerable$<$\mbox{\hyperlink{classOSML_1_1Media_1_1AudioData}{Audio\+Data}}$>$ O\+S\+M\+L.\+Data.\+Music.\+O\+S\+M\+L\+Audio\+Data.\+All\+Music\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Get all audio from database. Uses \mbox{\hyperlink{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a34edf0c6c48e34a22ee634a35e280c74}{Get\+Full\+List()}}. 
+
+\begin{DoxyReturn}{Returns}
+List Audio\+Data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_acfcc0260b0e47fbc31d8860bdea51eb2}\label{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_acfcc0260b0e47fbc31d8860bdea51eb2}} 
+\index{OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}!Artists@{Artists}}
+\index{Artists@{Artists}!OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}}
+\subsubsection{\texorpdfstring{Artists}{Artists}}
+{\footnotesize\ttfamily List$<$string$>$ O\+S\+M\+L.\+Data.\+Music.\+O\+S\+M\+L\+Audio\+Data.\+Artists\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+List of currently loaded artists names. Automaticly updated from Audio\+Db\+Manager. 
+
+\mbox{\Hypertarget{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a629e1cf6d911b7154716e85ce95ca88c}\label{classOSML_1_1Data_1_1Music_1_1OSMLAudioData_a629e1cf6d911b7154716e85ce95ca88c}} 
+\index{OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}!Years@{Years}}
+\index{Years@{Years}!OSML.Data.Music.OSMLAudioData@{OSML.Data.Music.OSMLAudioData}}
+\subsubsection{\texorpdfstring{Years}{Years}}
+{\footnotesize\ttfamily List$<$string$>$ O\+S\+M\+L.\+Data.\+Music.\+O\+S\+M\+L\+Audio\+Data.\+Years\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+List of currently loaded years. Automaticly updated from Audio\+Db\+Manager. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/\+Data/\+Music/O\+S\+M\+L\+Audio\+Data.\+cs\end{DoxyCompactItemize}

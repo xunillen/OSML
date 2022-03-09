@@ -1,0 +1,146 @@
+\href{https://www.codefactor.io/repository/github/nullcharmander/osml}{\texttt{ }}
+
+C\# and C based library made for easy media management.
+
+\subsection*{Notes}
+
+
+\begin{DoxyItemize}
+\item This library is in experimental phase, and many things may break.
+\item \mbox{\hyperlink{namespaceOSML}{O\+S\+ML}} was not tested on windows, so Linux is only supported platform(for now).
+\item C code needs to be rewritten.
+\end{DoxyItemize}
+
+\subsection*{Feature list}
+
+this is work in progress
+
+\subsubsection*{Main}
+
+
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Media caching using X\+ML and S\+Q\+Lite
+\item \mbox{[} \mbox{]} Log support(\+Osml\+Log)
+\item \mbox{[} \mbox{]} Settings storage support
+\end{DoxyItemize}
+
+\subsubsection*{Audio}
+
+
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Main Audio support
+\item \mbox{[}x\mbox{]} D3\+V2 metadata support
+\item \mbox{[}x\mbox{]} I\+D3\+V1 metadata support
+\item \mbox{[}x\mbox{]} Albums support
+\item \mbox{[}x\mbox{]} Artist support
+\item \mbox{[} \mbox{]} Playlist support
+\item \mbox{[} \mbox{]} Extensible Metadata Platform (X\+MP)
+\end{DoxyItemize}
+
+\subsubsection*{Planned features}
+
+\begin{quote}
+See Usage (Videos(movies) and images(pictures)) part see more info about audio and video support. \end{quote}
+
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Audio formats
+\item \mbox{[} \mbox{]} Video formats
+\end{DoxyItemize}
+
+\subsection*{Usage}
+
+\subsubsection*{Initialization}
+
+Reference osml library to your app, and execute Initialization with following line\+:
+
+\begin{DoxyVerb}await OSML.Initialization.Run()
+\end{DoxyVerb}
+
+
+This will create main \mbox{\hyperlink{namespaceOSML}{O\+S\+ML}} folder(used for caching and other stuff) and initialize cache(databases, etc...).
+
+Osml does not contain default searching(caching) folders, but you can add some with following line of code\+: \begin{DoxyVerb}OSML.Cache.CacheManager.AddAsync("folder_path_here").Wait();
+\end{DoxyVerb}
+
+
+\begin{quote}
+Media database will be automatically updated. \end{quote}
+
+
+\subsection*{}
+
+\subsubsection*{Getting audio(music)}
+
+After cache is initialized you can get your music using\+: \begin{DoxyVerb}OSML.Data.Music.OSMLAudioData.AllMusic;
+\end{DoxyVerb}
+
+
+\paragraph*{Filters\+:}
+
+\subparagraph*{Filtered by artist name\+:}
+
+\begin{DoxyVerb}OSML.Data.Music.OSMLAudioData.GetFromArtist("artist_name");
+\end{DoxyVerb}
+
+
+\subparagraph*{Filtered by album\+:}
+
+\begin{DoxyVerb}OSML.Data.Music.OSMLAudioData.GetFromAlbum("album_name");
+\end{DoxyVerb}
+
+
+\subparagraph*{Filtered by year\+:}
+
+\begin{DoxyVerb}OSML.Data.Music.OSMLAudioData.GetFromYear("year");
+\end{DoxyVerb}
+
+
+\subsection*{}
+
+\subsubsection*{Videos(movies) and images(pictures)}
+
+Video and image formats are not supported(yet). While those formats are unsupported, osml still caches files and only loads them as Media\+Obj(so no sql(slow)), which means only bare bones data is available. Here is how to get video files\+: \begin{DoxyVerb}foreach(Cache.CacheObj c_obj in Cache.CurrentCData.FolderList) {
+    foreach(Media.MediaObj m_obj in c_obj.Media) {
+        if(m_obj.Type == Media.MediaType.Video_Movies) {
+            System.Console.WriteLine(m_obj.Path);
+        }
+    }
+}
+\end{DoxyVerb}
+
+
+And here is how to get image files(Just change Media.\+Media\+Type.\+Video\+\_\+\+Movies to Media.\+Media\+Type.\+Images\+\_\+\+Pictures) \begin{DoxyVerb}foreach(Cache.CacheObj c_obj in Cache.CurrentCData.FolderList) {
+    foreach(Media.MediaObj m_obj in c_obj.Media) {
+        if(m_obj.Type == Media.MediaType.Images_Pictures) {
+            System.Console.WriteLine(m_obj.Path);
+        }
+    }
+}
+\end{DoxyVerb}
+
+
+\section*{How to contribute}
+
+\subsection*{Prerequisites}
+
+
+\begin{DoxyItemize}
+\item Minimum .N\+ET Core S\+DK version 2.\+2 installed
+\item Linux distribution that supports .N\+ET Core(\+Windows is not supported at this moment)
+\end{DoxyItemize}
+
+\subsubsection*{Clone repository}
+
+Open terminal and type\+:
+
+git clone \href{https://github.com/NULLCharmander/osml}{\texttt{ https\+://github.\+com/\+N\+U\+L\+L\+Charmander/osml}}
+
+This will clone osml to home directory, or to any other currently opened folder in terminal
+
+\subsubsection*{Tests}
+
+Not available.
+
+\subsubsection*{Pull request}
+
+Create pull request with description about changes 

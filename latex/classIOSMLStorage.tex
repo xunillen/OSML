@@ -1,0 +1,99 @@
+\hypertarget{classIOSMLStorage}{}\section{I\+O\+S\+M\+L\+Storage Class Reference}
+\label{classIOSMLStorage}\index{IOSMLStorage@{IOSMLStorage}}
+Inheritance diagram for I\+O\+S\+M\+L\+Storage\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIOSMLStorage}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{classIOSMLStorage_aca08055c799d8c86bfdc427c54b92993}{Delete}} (string path)
+\begin{DoxyCompactList}\small\item\em Deletes specified file or directory. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{classIOSMLStorage_a8646a392bda2184f21ae3439d67240a5}{Move}} (string source\+\_\+path, string destination\+\_\+path)
+\item 
+abstract void \mbox{\hyperlink{classIOSMLStorage_a95cdf051ac2045a9cfa4fb29a78b26c0}{Create}} (string path)
+\begin{DoxyCompactList}\small\item\em Create file or directory on specific path. \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{classIOSMLStorage_adc2fa33637c24f1a5c7f3e9dc746c5c6}{Exists}} (string path)
+\begin{DoxyCompactList}\small\item\em Checks if file or directory exsits. (if exists, it also checks if it is from cache(\+Is\+From\+Cache)), \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{classIOSMLStorage_af3e0ef9f76c9739c3e685b1295cdf90a}{Is\+From\+Cache}} (string path)
+\begin{DoxyCompactList}\small\item\em Checks if file or directory is in any of user specified cache folder Or in main osml folder. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classIOSMLStorage_a95cdf051ac2045a9cfa4fb29a78b26c0}\label{classIOSMLStorage_a95cdf051ac2045a9cfa4fb29a78b26c0}} 
+\index{IOSMLStorage@{IOSMLStorage}!Create@{Create}}
+\index{Create@{Create}!IOSMLStorage@{IOSMLStorage}}
+\subsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily abstract void I\+O\+S\+M\+L\+Storage.\+Create (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create file or directory on specific path. 
+
+
+
+Implemented in \mbox{\hyperlink{classOSML_1_1IO_1_1OSMLStorage_1_1CDirectory_a25890d178542da52c0b87200cfe3cb87}{O\+S\+M\+L.\+I\+O.\+O\+S\+M\+L\+Storage.\+C\+Directory}}, and \mbox{\hyperlink{classOSML_1_1IO_1_1OSMLStorage_1_1CFile_a1854c3a8403c27dda2bce815c0000697}{O\+S\+M\+L.\+I\+O.\+O\+S\+M\+L\+Storage.\+C\+File}}.
+
+\mbox{\Hypertarget{classIOSMLStorage_aca08055c799d8c86bfdc427c54b92993}\label{classIOSMLStorage_aca08055c799d8c86bfdc427c54b92993}} 
+\index{IOSMLStorage@{IOSMLStorage}!Delete@{Delete}}
+\index{Delete@{Delete}!IOSMLStorage@{IOSMLStorage}}
+\subsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily abstract void I\+O\+S\+M\+L\+Storage.\+Delete (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Deletes specified file or directory. 
+
+
+
+Implemented in \mbox{\hyperlink{classOSML_1_1IO_1_1OSMLStorage_1_1CDirectory_a6568c6fcd267277ec3e032802fe50d1c}{O\+S\+M\+L.\+I\+O.\+O\+S\+M\+L\+Storage.\+C\+Directory}}, and \mbox{\hyperlink{classOSML_1_1IO_1_1OSMLStorage_1_1CFile_a23dcf0c1471b9eb59e43b46ce7e6fa48}{O\+S\+M\+L.\+I\+O.\+O\+S\+M\+L\+Storage.\+C\+File}}.
+
+\mbox{\Hypertarget{classIOSMLStorage_adc2fa33637c24f1a5c7f3e9dc746c5c6}\label{classIOSMLStorage_adc2fa33637c24f1a5c7f3e9dc746c5c6}} 
+\index{IOSMLStorage@{IOSMLStorage}!Exists@{Exists}}
+\index{Exists@{Exists}!IOSMLStorage@{IOSMLStorage}}
+\subsubsection{\texorpdfstring{Exists()}{Exists()}}
+{\footnotesize\ttfamily abstract bool I\+O\+S\+M\+L\+Storage.\+Exists (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks if file or directory exsits. (if exists, it also checks if it is from cache(\+Is\+From\+Cache)), 
+
+
+
+Implemented in \mbox{\hyperlink{classOSML_1_1IO_1_1OSMLStorage_1_1CDirectory_ae4616522bb7f9a07084e461ea634965c}{O\+S\+M\+L.\+I\+O.\+O\+S\+M\+L\+Storage.\+C\+Directory}}, and \mbox{\hyperlink{classOSML_1_1IO_1_1OSMLStorage_1_1CFile_ab74c1d57146a48a39bffe7ba6853752c}{O\+S\+M\+L.\+I\+O.\+O\+S\+M\+L\+Storage.\+C\+File}}.
+
+\mbox{\Hypertarget{classIOSMLStorage_af3e0ef9f76c9739c3e685b1295cdf90a}\label{classIOSMLStorage_af3e0ef9f76c9739c3e685b1295cdf90a}} 
+\index{IOSMLStorage@{IOSMLStorage}!IsFromCache@{IsFromCache}}
+\index{IsFromCache@{IsFromCache}!IOSMLStorage@{IOSMLStorage}}
+\subsubsection{\texorpdfstring{IsFromCache()}{IsFromCache()}}
+{\footnotesize\ttfamily abstract bool I\+O\+S\+M\+L\+Storage.\+Is\+From\+Cache (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks if file or directory is in any of user specified cache folder Or in main osml folder. 
+
+
+
+Implemented in \mbox{\hyperlink{classOSML_1_1IO_1_1OSMLStorage_1_1CDirectory_a7d4783f478aab61af2df5b91c4cc3c7d}{O\+S\+M\+L.\+I\+O.\+O\+S\+M\+L\+Storage.\+C\+Directory}}, and \mbox{\hyperlink{classOSML_1_1IO_1_1OSMLStorage_1_1CFile_ac3c40ae47a8251eaafa0796b67d144c6}{O\+S\+M\+L.\+I\+O.\+O\+S\+M\+L\+Storage.\+C\+File}}.
+
+\mbox{\Hypertarget{classIOSMLStorage_a8646a392bda2184f21ae3439d67240a5}\label{classIOSMLStorage_a8646a392bda2184f21ae3439d67240a5}} 
+\index{IOSMLStorage@{IOSMLStorage}!Move@{Move}}
+\index{Move@{Move}!IOSMLStorage@{IOSMLStorage}}
+\subsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily abstract void I\+O\+S\+M\+L\+Storage.\+Move (\begin{DoxyParamCaption}\item[{string}]{source\+\_\+path,  }\item[{string}]{destination\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+
+
+$<$summray$>$ Moves file or directory from source\+\_\+path to destination\+\_\+path. 
+
+Implemented in \mbox{\hyperlink{classOSML_1_1IO_1_1OSMLStorage_1_1CDirectory_a3cfadd280f91bf0b01e4ef9114d9499d}{O\+S\+M\+L.\+I\+O.\+O\+S\+M\+L\+Storage.\+C\+Directory}}, and \mbox{\hyperlink{classOSML_1_1IO_1_1OSMLStorage_1_1CFile_a94ec4b71a537df1234a5ca44ae7bd825}{O\+S\+M\+L.\+I\+O.\+O\+S\+M\+L\+Storage.\+C\+File}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/dev/osml/\+I\+O/\+Isolated\+Storage\+Manager/I\+Osml\+Storage.\+cs\end{DoxyCompactItemize}
